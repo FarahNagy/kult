@@ -1,0 +1,653 @@
+@font-face {
+  font-family: boldFont;
+  src: url("IstokWeb-Bold.ttf");
+}
+@font-face {
+  font-family: regFont;
+  src: url("IstokWeb-Regular.ttf");
+}
+.main {
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  background-image: url("./Group 11.png");
+  width:100%;
+  height: 2500px;
+  margin-left: auto;
+  background-size: cover;
+  z-index: 1;
+  margin-top: 100px;
+  background-attachment: fixed;
+  @media screen and (max-width: 768px) {
+ 
+  }
+  
+}
+.grey-bubble {
+  background-image: url("./grey-bubble.png");
+  width: 640px;
+  height: 725px;
+  position: absolute;
+  left: 0; /* Align to the left edge */
+  background-size: 100%;
+  @media screen and (max-width: 768px) {
+  
+  }
+}
+
+.grey-bubble-par-heading {
+  margin-top: 95px;
+  line-height: 0.78;
+}
+
+.humanizing {
+  font-family: boldFont;
+  font-size: 60px;
+  color: #4aa9ea;
+  margin-left: 3%;
+}
+
+.your-brand {
+  font-family: regFont;
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-left: 1%;
+}
+
+.experience {
+  font-family: boldFont;
+  font-size: 60px;
+  color: #4aa9ea;
+  margin-left: 3%;
+}
+
+.grey-bubble-par {
+  font-family: regFont;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 3%;
+  padding-top: 25px;
+  line-height: 1.1;
+}
+
+.arrow{
+  margin-top: 70px;
+  margin-left: 400px;
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(128, 0, 0);
+  height: 700px; /* Remove fixed height */
+  margin: 160px;
+  margin-top: 20%;
+  left: 0;
+  width: 100%;
+}
+.cardsHeading {
+  margin-left: 590px; /* Center the heading horizontally */
+  font-family: boldFont;
+  font-size: 32px;
+  white-space: nowrap;
+  color: #4aa9ea;
+}
+
+.cardRow {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  flex-direction: row;
+  height: 250px;
+  margin-left: 200px;
+}
+
+.cardItem{
+  margin-right: 50px;
+  
+
+}
+
+.image-overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); /* Overlay background color */
+}
+
+.card-par-1a{
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.card-1a{
+  color:#3a3939;
+  font-size:20px;
+  line-height: 1;
+  font-family: boldFont;
+}
+
+.card-par-1b{
+  margin-left: 20px;
+  font-size: 13px;
+  color:  rgb(177, 169, 169);
+  line-height: 1;
+}
+
+.card-1b{
+  font-family: regFont;
+}
+
+.image-overlay2 {
+  margin-left: 350px;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); /* Overlay background color */
+}
+
+
+.card-2 {
+  color: black;
+  font-size: 18px;
+  padding: 15px;
+}
+.card-par-2a{
+  margin-left: 20px;
+  padding-bottom: 22px;
+}
+
+.card-2a{
+  font-family: boldFont;
+  color:#3a3939;
+  font-size:20px;
+  line-height: 1;
+}
+
+.card-par-2b{
+  margin-left: 15px;
+  font-size: 13px;
+  color: rgb(167, 159, 159);
+  line-height: 1;
+  
+}
+
+.card-2b{
+  font-family:regFont;
+  line-height: 1;
+}
+
+.image-overlay3{
+  margin-left: 700px;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); /* Overlay background color */
+}
+
+.card-par-3a{
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+
+.card-3a{
+  color:#3a3939;
+  font-size:20px;
+  line-height: 1;
+  font-family: boldFont;
+}
+
+.card-par-3b{
+  margin-left: 20px;
+  font-size: 13px;
+  color:  rgb(177, 169, 169);
+  line-height: 1;
+}
+
+.card-3b{
+  font-family: regFont;
+}
+
+.blue-bubble {
+  display: inline;
+  background-image: url("./blue-bubble.png");
+  width: 640px;
+  height: 770px;
+  position: absolute;
+  left: 0; /* Align to the left edge */
+  background-size: 100%;
+  @media screen and (max-width: 768px) {
+  
+  }
+}
+
+.blue-bubble-par-heading{
+  margin-top: 100px;
+  line-height: 0.78;
+  padding-bottom: 7px;
+  
+}
+
+.why{
+  font-family: boldFont;
+  font-size: 60px;
+  color: #3a3939;
+  margin-left: 12%;
+}
+
+.choose{
+  font-family: regFont;
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-left: 5%;
+}
+
+.kult{
+  font-family: boldFont;
+  font-size: 60px;
+  color: #3a3939;
+  margin-bottom: 10px;
+  margin-left: 12%;
+}
+
+.blue-bubble-par{
+  font-family: regFont;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 5%;
+  padding-top: 25px;
+  line-height: 1.1;
+}
+
+.arrow2{
+  margin-left: 430px;
+  width:200px;
+  height: 200px;
+  
+}
+
+.bubble-and-arrow{
+  display: flex;
+  flex-direction: row;
+
+  width: 1200px;
+  height: 800px;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  margin-left: 180px;
+  margin-right: auto;
+  width: 1000px;
+  height: 500px;
+}
+
+.footer-header{
+  color: #4aa9ea;
+  font-family: regFont;
+}
+
+.companies1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  width: 720px;
+  height: 100px;
+}
+
+.egbank{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./egbank.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.dhl{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./DHL.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.etisalat{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./etisalat.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.kinder{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./kinder.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.nutella{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./nutella.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.reebok{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./Reebok.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+.glo{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./glo.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.bat{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./bat.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+.abou-ghaly{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./aboughaly.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+.companies2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  width: 720px;
+  height: 70px;
+  margin-bottom: 100px;
+}
+
+.elsewedy{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./elsewedy.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.fiat{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./fiat.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+.ferrero{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./ferrero.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.cbc{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./cbc.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.ktm{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./ktm.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.zas{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./zas.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.mansour{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./mansour.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+.pepsi{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./pepsi.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+
+.sixt{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./sixt.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.wilson{
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height:80px;
+  background-image: url("./wilson.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.circles{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 300px;
+  height: 30px;
+ 
+  margin-top: 70px;
+}
+
+.circleItem{
+    width: 30px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    height: 30px;
+    background-color: #4aa9ea;
+    border-radius: 50%;
+}
+
+.joinTheKult{
+  font-family: regFont;
+  font-size: 18px;
+  color: #3a3939;
+}
+
+.contactInfoBox{
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 500px;
+  margin-left: 60px;
+ 
+}
+
+.leftInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 250px;
+
+  margin-left: 200px;
+ 
+}
+
+.rightInfo{
+  display: flex;
+  flex-direction: column;
+
+  width: 270px;
+}
+
+.phone{
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 30px;
+  color: #3a3939;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.email{
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 30px;
+  color: #3a3939;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.icon{
+  padding-right: 5px;
+  width: 27px;
+  height: 22px;
+  margin-bottom: 50px;
+}
+.address{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 20px;
+  font-size: 14px;
+  color: #3a3939;
+  text-decoration: none;
+}
+
+
+.facebookAndInstagram{
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  width: 400px;
+  margin-left: auto;
+  padding-left: 100px;
+  height: 30px;
+  align-self: flex-end;
+  color: #3a3939;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.copyright{
+  color: #3a3939;
+  font-size: 12px;
+}
+
+.viewMore{
+  margin-left: 1150px;
+  width: 70px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
