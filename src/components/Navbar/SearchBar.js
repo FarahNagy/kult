@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./search.css";
-import { redirect } from "react-router-dom";
 var data = require("./data.json");
 const SearchBar = () => {
   const [value, setValue] = useState("");
@@ -10,10 +9,10 @@ const SearchBar = () => {
   };
 
   const handleKeyDown = (event) => {
-    if (event.key === 'Enter') {
-        onSearch(value);
+    if (event.key === "Enter") {
+      onSearch(value);
     }
-  }
+  };
 
   const onSearch = (searchTerm) => {
     setValue(searchTerm);
@@ -35,25 +34,29 @@ const SearchBar = () => {
         searchTerm.toLocaleLowerCase() === "battle of the burgers"
       ) {
         window.location.href = "/platforms";
-      }
-      else{
-        window.location.href="/"
+      } else {
+        window.location.href = "/";
       }
     }
   };
+
   return (
     <div className="search-container">
       <div className="search-input">
         <input
-        className="search-text"
+          className="search-text"
           type="text"
           value={value}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
           placeholder="Search..."
         />
-        <button onClick={() => onSearch(value)} className="searchButton"> 
-        <img src="searchButtton.png" alt="searchButton" className="buttonImage"/>
+        <button onClick={() => onSearch(value)} className="searchButton">
+          <img
+            src="searchButtton.png"
+            alt="searchButton"
+            className="buttonImage"
+          />
         </button>
       </div>
       <div className="dropdown">
@@ -62,11 +65,7 @@ const SearchBar = () => {
             const searchItem = value.toLowerCase();
             const searchTerm = item.search_term.toLocaleLowerCase();
 
-            return (
-              searchItem &&
-              searchTerm.includes(searchItem) &&
-              searchTerm !== searchItem
-            );
+            return searchItem && searchTerm.includes(searchItem);
           })
           .map((item) => (
             <div

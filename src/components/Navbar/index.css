@@ -4,12 +4,13 @@
 }
 .logo{
     padding-top: 30px;
-    margin-left: 30px;
     width: 160px;
     height: 100px;
+    @media screen and (min-width: 769px) {
+      margin-left: 80px;
+    }
   
-
-
+   
 }
 
 .menu{

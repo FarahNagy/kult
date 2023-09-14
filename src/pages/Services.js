@@ -1,173 +1,316 @@
 import React from "react";
 import "./services.css";
 import FooterWithoutClients from "./FooterWithoutClients";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+
 const Services = () => {
   return (
     <div className="mainServices">
-      <div
-        style={{
-          width: "100%",
-          height: "200px",
-          backgroundColor: "white",
-        }}
-      >
-        <div className="balls">
-          <img src="bubblesServices.png" alt="kult-logo" className="ballsImage" />
-          <div className="about-us-text">
-            <p className="about-us">
-              <span className="about">OUR </span>{" "}
-              <span className="us"> SERVICES</span>
+      <div className="bubblesServices">
+        <p className="servicesHeading">
+          <span className="our">OUR </span>{" "}
+          <span className="services">SERVICES</span>
+        </p>
+        <p className="parInBubbles">
+          Unveil the magic of our marketing agency, where data fuels creativity.
+          We craft captivating brand stories through web design, social media,
+          and compelling content. Join us on a transformative journey, guided by
+          analytics, as we make your brand shine.
+        </p>
+      </div>
+      <div className="rowEins">
+        <div className="CEPDiv">
+          <div className="CEPText">
+            <p className="CEPHeading">CREATIVE ENTERTAINMENT PLATFORMS</p>
+            <p className="CEPPar">
+              This is what started it all. At Kult, we believe that no idea is
+              too big or too bizarre, no matter how outrageous it might sound.
+              Whether your goal is to promote your established brands or a new
+              idea you want to bring to life, Kult will help you reach your
+              destination by creating a relevant platform with our innovative
+              and creative team. Our vast experience in the event’s sector
+              enables us to create platforms that perfectly translate the
+              client’s vision to reach the maximum marketing potential that is
+              required.
             </p>
-            <p className="text">
-              Unveil the magic of our marketing agency,
-              <br /> where data fuels creativity. We craft <br />
-              captivating brand stories through web design,
-              <br />
-              social media, and compelling content. Join us <br />
-              on a transformative journey, guided by <br />
-              analytics, as we make your brand shine.
-            </p>
+          </div>
+          <div className="carOne">
+            <div className="theBlueArrow"></div>
+            <Carousel
+              autoPlay={false}
+              emulateTouch={true}
+              showStatus={false}
+              showIndicators={false}
+              swipeable={true}
+              infiniteLoop={true}
+              interval={3000}
+              width={320}
+              showThumbs={false}
+            >
+              <img
+                src="carouselImage4.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage3.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage2.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage5.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+            </Carousel>
           </div>
         </div>
       </div>
-      <div
-        style={{
-          width: "100%",
-          height: "400px",
-          marginTop: "200px",
-          display: "flex",
-          flexDirection: "row",
-          backgroundColor:'white'
+      
+      <div className="rowZwei">
+        <div className="OGADiv">
+          <div className="OGAText">
+            <p className="OGAHeading">ON-GROUND ACTIVATIONS</p>
+            <p className="OGAPar">
+              On-Ground Activations are one of the main keys to delivering your
+              message to the masses and to make your campaign a dynamic platform
+              that directly reaches your clientele. Kult will be responsible for
+              planning and executing every detail to ensure a successful
+              campaign, from designing the booth to handling on-ground
+              operations, we will always deliver the optimum results that best
+              reflect the brand’s image.
+            </p>
+          </div>
+          <div className="carTwo">
+            <div className="theBlueArrow"></div>
+            <Carousel
+              autoPlay={false}
+              emulateTouch={true}
+              showStatus={false}
+              showIndicators={false}
+              swipeable={true}
+              infiniteLoop={true}
+              interval={3000}
+              width={320}
+              showThumbs={false}
+            >
+              <img
+                src="carouselImage4.png"
+                alt="kult-logo"
+                className="carousel"
+              />
 
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            width: "800px",
-            height: "100%",
-          }}
-        >
-          <h1
-            style={{
-              marginLeft: "50px",
-              color: "#4aa9ea",
-              fontFamily: "boldFont",
-              fontSize: "35px",
-            }}
-          >
-            CREATIVE ENTERTAINMENT PLATFORMS
-          </h1>
-          <p
-            style={{
-              marginLeft: "50px",
-              fontFamily: "regFont",
-              lineHeight: "1.25",
-              color: "GrayText",
-              marginTop: "5px",
-              fontSize: "20px",
-            }}
-          >
-            This is what started it all. At Kult, we believe that no idea is too
-            big or too <br />
-            bizarre, no matter how outrageous it might sound. Whether your goal
-            is to <br />
-            promote your established brands or a new idea you want to bring to
-            life, <br />
-            Kult will help you reach your destination by creating a relevant
-            platform <br />
-            with our innovative and creative team. Our vast experience in the
-            event’s <br />
-            sector enables us to create platforms that perfectly translate the
-            client’s <br />
-            vision to reach the maximum marketing potential that is required.
-          </p>
+              <img
+                src="carouselImage3.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage2.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage5.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+            </Carousel>
+          </div>
         </div>
       </div>
-      <div
-        style={{
-          width: "100%",
-          height: "400px",
-          backgroundColor: "#EDF6FD",
-        }}
-      ></div>
-      <div
-        style={{
-          width: "100%",
-          height: "400px",
-          backgroundColor: "white",
-        }}
-      ></div>
-      <div
-        style={{
-          width: "100%",
-          height: "400px",
-          backgroundColor: "#EDF6FD",
-        }}
-      ></div>
-      <div
-        style={{
-          width: "100%",
-          height: "400px",
-          backgroundColor: "white",
-        }}
-      ></div>
-      <div
-        style={{
-          width: "100%",
-          height: "400px",
-          backgroundColor:'#EDF6FD'
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            width: "1000px",
-            height: "100%",
-          }}
-        >
-          <h1
-            style={{
-              marginLeft: "50px",
-              color: "#4aa9ea",
-              fontFamily: "boldFont",
-              fontSize: "35px",
-            }}
-          >
-            TRADE-MARKETING & DISTRIBUTION
-          </h1>
-          <p
-            style={{
-              marginLeft: "50px",
-              fontFamily: "regFont",
-              lineHeight: "1.25",
-              color: "GrayText",
-              marginTop: "5px",
-              fontSize: "20px",
-            }}
-          >
+      <div className="rowDrei">
+        <div className="CEPDiv">
+          <div className="CEPText">
+            <p className="CEPHeading">SOCIAL MEDIA & PUBLIC RELATIONS</p>
+            <p className="CEPPar">
+              Kult has built a strong, reliable, and creative digital marketing
+              team that manages aspects of a successful digital campaign which
+              includes business development, content creation, media buying, and
+              graphic design. Our digital marketing team is always in sync with
+              the client to obtain a vision to create a campaign with an
+              outstanding output. . Kult’s PR team has acquired an extensive
+              database consisting of local and international influencers which
+              allows us to reach and create influential exposure to suit and
+              expand your brand.
+            </p>
+          </div>
+          <div className="carOne">
+            <div className="theBlueArrow"></div>
+            <Carousel
+              autoPlay={false}
+              emulateTouch={true}
+              showStatus={false}
+              showIndicators={false}
+              swipeable={true}
+              infiniteLoop={true}
+              interval={3000}
+              width={320}
+              showThumbs={false}
+            >
+              <img
+                src="carouselImage4.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage3.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage2.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage5.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+            </Carousel>
+          </div>
+        </div>
+      </div>
+      <div className="rowVier">
+        <div className="PBMDiv">
+          <div className="PBMText">
+            <p className="PBMHeading">PRODUCTION BTL & MARKETING</p>
+            <p className="PBMPar">
+              To guarantee the best results in all services offered, Kult also
+              proves the production of anything you desire. From ushering
+              services, recruitment, production or selling units, uniforms,
+              giveaways and more, everything is tailored to your brand.
+            </p>
+          </div>
+          <div className="carFour">
+            <div className="theBlueArrow"></div>
+            <Carousel
+              autoPlay={false}
+              emulateTouch={true}
+              showStatus={false}
+              showIndicators={false}
+              swipeable={true}
+              infiniteLoop={true}
+              interval={3000}
+              width={320}
+              showThumbs={false}
+            >
+              <img
+                src="carouselImage4.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage3.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage2.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage5.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+            </Carousel>
+          </div>
+        </div>
+      </div>
+      <div className="rowDrei">
+        <div className="CEPDiv">
+          <div className="CEPText">
+            <p className="CEPHeading">EVENT PLANNING & MANAGEMENT</p>
+            <p className="EPMPar">
+              At Kult, we have developed the ultimate formula to create a
+              successful event. Event planning & event management are falsely
+              considered the same thing, but to have a successful event you need
+              to combine a team that can do both simultaneously and coherently.
+              Not only do we plan & execute the event, we also coordinate all
+              details from ushering, ticketing systems to even light fixtures or
+              floor stickers - every single detail is managed by us to ensure a
+              hassle free expereince for both clients and attendees.
+            </p>
+          </div>
+          <div className="carOne">
+            <div className="theBlueArrow"></div>
+            <Carousel
+              autoPlay={false}
+              emulateTouch={true}
+              showStatus={false}
+              showIndicators={false}
+              swipeable={true}
+              infiniteLoop={true}
+              interval={3000}
+              width={320}
+              showThumbs={false}
+            >
+              <img
+                src="carouselImage4.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage3.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage2.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+
+              <img
+                src="carouselImage5.png"
+                alt="kult-logo"
+                className="carousel"
+              />
+            </Carousel>
+          </div>
+        </div>
+      </div>
+      <div className="rowSechs">
+        <div className="TMDText">
+          <p className="TMDHeading">TRADE-MARKETING & DISTRIBUTION</p>
+          <p className="TMDPar">
             All businesses realize the importance of marketing to consumers,
-            however many businesses fail <br />
-            to develop proper strategies when it comes to marketing products to
-            the wholesalers, <br />
-            distributors, and retailers that bring them to the consumers . Our
-            trade marketing & <br />
+            however many businesses fail to develop proper strategies when it
+            comes to marketing products to the wholesalers, distributors, and
+            retailers that bring them to the consumers . Our trade marketing &
             distribution services will ensure increased demand at wholesaler,
-            retailer, and distributor level <br />
-            in order to ensure that we deliver your product to the right
-            consumer. We are handling some of <br />
-            the biggest accounts and putting them on the right shelves. From
-            vendors and suppliers to <br />
-            manufacturer, to point of sale, including packaging, inventory,
-            warehousing, and logistics, our <br />
-            team will handle it all to ensure an effective market penetration
-            strategy.
+            retailer, and distributor level in order to ensure that we deliver
+            your product to the right consumer. We are handling some of the
+            biggest accounts and putting them on the right shelves. From vendors
+            and suppliers to manufacturer, to point of sale, including
+            packaging, inventory, warehousing, and logistics, our team will
+            handle it all to ensure an effective market penetration strategy.
           </p>
         </div>
+        <div className="carPlaceHolder"></div>
       </div>
-      <FooterWithoutClients />
     </div>
   );
 };

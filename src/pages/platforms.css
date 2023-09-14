@@ -1,23 +1,334 @@
-.menu-item {
-    padding: 0 40px;
-    margin: 5px 10px;
-    user-select: none;
-    cursor: pointer;
-    border: none;
+@font-face {
+  font-family: medFont;
+  src: url("Montserrat-Medium.ttf");
+}
+
+.mainPlatform {
+  width: 100%;
+  height: 4000px;
+  display: flex;
+  flex-direction: column;
+}
+.readMoreLink{
+  background-color: pink;
+}
+
+.battleOfTheBands {
+  margin-top: 110px;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  box-shadow: 0px -10px 20px #4aa9ea;
+  background-image: url("lastTrialBlur.png");
+  background-repeat: repeat-y;
+  display: flex;
+  @media screen and (max-width:1092px) {
+    background-image: url("evenSmallerBoB.png");
   }
-  .menu-item-wrapper.active {
-    border: 1px blue solid;
+  @media screen and (max-width:472px) {
+    background-image: url("smallestBoB.png");
   }
-  .menu-item.active {
-    border: 1px green solid;
+  
+  
+  @media screen and (max-width: 684px) {
+    height: 550px;
   }
-   
-  .scroll-menu-arrow {
-    padding: 20px;
-    cursor: pointer;
+  @media screen and (max-width: 421px) {
+    height:530px;
+  }
+}
+/* .battleOfTheBurgers {
+  width: 100%;
+  margin-top: 30px;
+  height: calc(100vh-90px);
+  background-size: cover;
+  box-shadow: 0px -5px 50px #4aa9ea;
+  background-image: url("lastTrialBlur.png");
+  background-repeat: repeat-y;
+  display: flex;
+} */
+
+/* .burgerNText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: cadetblue;
+  height: 100%;
+} */
+
+.bobLogo {
+  width: 320px;
+  margin-top: -20px;
+  position: absolute;
+
+  height: 450px;
+  background-image: url("BoBLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 1154px) {
+    width: 300px;
+    height: 430px;
   }
 
-  .rec-arrow-left{
-    background-color: white !important;
-    box-shadow: none !important;
+  @media screen and (max-width: 918px) {
+    width: 290px;
+    height: 420px;
   }
+  @media screen and (max-width: 779px) {
+    width: 270px;
+    height: 400px;
+  }
+  @media screen and (max-width: 684px) {
+    width: 250px;
+
+    height: 380px;
+  }
+  @media screen and (max-width: 628px) {
+    width: 230px;
+    height: 360px;
+  }
+  @media screen and (max-width: 565px) {
+    width: 220px;
+    height: 340px;
+  }
+  @media screen and (max-width: 421px) {
+    width: 200px;
+    height: 320px;
+  }
+}
+
+.MicLogo {
+  width: 310px;
+  height: 320px;
+  margin-top: 140px;
+  background-image: url("micBoB.png");
+  position: absolute;
+  margin-left: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 1154px) {
+    width: 290px;
+    height: 300px;
+  }
+  @media screen and (max-width: 918px) {
+    width: 270px;
+    height: 280px;
+  }
+  @media screen and (max-width: 779px) {
+    width: 220px;
+    margin-top: 100px;
+    height: 400px;
+  }
+  @media screen and (max-width: 628px) {
+    width: 190px;
+  }
+  @media screen and (max-width: 565px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 421px) {
+    margin-top:80px;
+  }
+}
+
+.crowdBoB {
+  height: 100px;
+  height: auto;
+  margin-left: auto;
+  margin-top: auto;
+  width: auto;
+  height: 66%;
+  @media screen and (max-width: 1000px) {
+    height: 55%;
+  }
+  @media screen and (max-width: 818px) {
+    height: 53%;
+  }
+  @media screen and (max-width: 737px) {
+    height: 50%;
+  }
+  @media screen and (max-width: 628px) {
+    height: 43%;
+  }
+  @media screen and (max-width: 539px) {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.crowdNMic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  @media screen and (max-width: 1104px) {
+    width: 1150px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 1000px;
+  }
+  @media screen and (max-width: 628px) {
+    width: 4000px;
+  }
+  @media screen and (max-width: 477px) {
+    width: 10000px;
+  }
+}
+
+.readMore {
+  width: 150px;
+  margin-left: 38px;
+  margin-top: 470px;
+  height: 40px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #4aa9ea;
+  color: white;
+  font-size: 17.5px;
+  position: absolute;
+
+  font-family: "boldFont";
+  cursor: pointer;
+  @media screen and (max-width: 1294px) {
+    font-size: 16.5px;
+  }
+
+  @media screen and (max-width: 1187px) {
+    font-size: 15.5px;
+  }
+  @media screen and (max-width: 1154px) {
+    margin-top: 440px;
+  }
+  @media screen and (max-width: 990px) {
+    font-size: 15px;
+    width: 130px;
+  }
+
+  @media screen and (max-width: 918px) {
+    margin-top: 450px;
+
+    font-size: 14.5px;
+  }
+  @media screen and (max-width: 779px) {
+    margin-left:35px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 13.5px;
+    width: 110px;
+  }
+ 
+
+
+  @media screen and (max-width: 684px) {
+    margin-left: 30px;
+    margin-top: 400px;
+  }
+  @media screen and (max-width: 628px) {
+    margin-top: 380px;
+    margin-left: 30px;
+  }
+  @media screen and (max-width: 565px) {
+    font-size: 12px;
+    height: 30px;
+    width: 100px;
+    margin-left: 27px;
+    margin-top: 360px;
+  }
+  @media screen and (max-width: 442px) {
+    margin-top: 385px;
+    margin-left:26px;
+  }
+  @media screen and (max-width: 421px) {
+    margin-top: 330px;
+    margin-left:26px;
+  }
+  @media screen and (max-width: 353px) {
+    margin-top: 350px;
+  }
+}
+
+.BoBPar {
+  font-family: "medFont";
+  font-size: 18px;
+  line-height: 1.2;
+  color: #29658c;
+  @media screen and (max-width: 1294px) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: 1294px) {
+    font-size: 16.5px;
+  }
+  @media screen and (max-width: 1187px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 1154px) {
+    font-size: 15.5px;
+  }
+  @media screen and (max-width: 981px) {
+    font-size: 14.5px;
+  }
+  @media screen and (max-width: 802px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 781px) {
+    font-size: 13.7px;
+  }
+  @media screen and (max-width: 746px) {
+    font-size: 13.7px;
+  }
+
+  @media screen and (max-width: 565px) {
+    font-size: 12.7px;
+  }
+}
+
+.BoBParDiv {
+  margin-left: 38px;
+  position: absolute;
+  margin-top: 310px;
+  width: 46%;
+  @media screen and (max-width: 1154px) {
+    margin-top: 290px;
+    width: 39%;
+  }
+  @media screen and (max-width: 918px) {
+    margin-top: 275px;
+  }
+
+  @media screen and (max-width: 781px) {
+    width: 35%;
+  }
+  @media screen and (max-width: 779px) {
+    margin-top: 255px;
+    margin-left:35px;
+  }
+  @media screen and (max-width: 684px) {
+    width: 45%;
+    margin-left:30px;
+    margin-top: 235px;
+  }
+  @media screen and (max-width: 628px) {
+    width: 60%;
+    margin-top: 230px;
+    margin-left: 30px;
+    height: 400px;
+  }
+  @media screen and (max-width: 565px) {
+    margin-left: 27px;
+    margin-top: 220px;
+  }
+  @media screen and (max-width: 477px) {
+    margin-top: 220px;
+  }
+  @media screen and (max-width: 421px) {
+    margin-top: 180px;
+    width:75%;
+    margin-left:25px;
+  }
+}
