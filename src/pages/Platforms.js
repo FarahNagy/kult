@@ -53,7 +53,7 @@ const Platforms = () => {
           </Link>
         </div>
       </div>
-      <div className="battleOfTheWheels">
+      {/* <div className="battleOfTheWheels">
         <div className="BoWLogoNText">
           <div className="BoWLogo"/>
           <div className="BoWText">
@@ -75,7 +75,7 @@ const Platforms = () => {
           <div className="flag" />
           <div className="car" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
