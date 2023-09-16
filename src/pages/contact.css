@@ -1,51 +1,118 @@
+@font-face {
+  font-family: lightFont;
+  src: url("Montserrat-Light.ttf");
+}
+
 .mainContact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 60px;
   background-image: url("./contactBackground.png");
   width: 100%;
   height: 1400px;
   margin-left: auto;
   background-size: cover;
   z-index: 1;
-  margin-top: 100px;
   background-attachment: fixed;
-  @media screen and (max-width: 768px) {
-  }
+  height: 800px;
+  display: flex;
 }
 
 .placeholder::placeholder {
+  color: #bfbfbf;
   position: absolute;
-  margin-top: 5px;
+  margin-top: 2px;
+  font-family: "regFont";
 }
 
-
-.placeholder:focus{
+.placeholder:focus {
   outline: none;
 }
 
-.placeholder{
+.placeholder {
   color: black;
   font-size: 18px;
   padding-left: 20px;
-
 }
 
-.send{
-  color:#4aa9ea;
+.send {
+  color: #4aa9ea;
   cursor: pointer;
-
-
 }
 
-.send:hover{
-  background-color:#29658c;
+.send:hover {
+  background-color: #29658c;
   color: white;
 }
 
-.contactform{
+.contactform {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
   border-radius: 22px;
   margin-top: 100px;
+  width: 1050px;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftWhiteDiv{
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  width:40%;
+  height: 100%;
+  background-color: white;
+}
+
+
+.rightBlueDiv{
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  align-items: center;
+  width:60%;
+  height: 100%;
+  background-color: #4aa9ea;;
+}
+
+.yourDesignVoice{
+  margin-left: 40px;
+  font-size:32px;
+  color: #4aa9ea;
+  margin-top: 50px;
+  line-height: 0.95;
+
+}
+
+.design{
+  font-family:"boldFont";
+}
+
+.voice{
+  font-family: "lightFont";
+}
+
+.talkAbtVision{
+  font-size:28px;
+  font-family:"medFont";
+  color: white;
+  margin-top:30px;
+}
+
+.firstLastName{
+  display: flex;
+  width:500px;
+  justify-content: space-between;
+}
+
+.theForm{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: auto;
+  height:460px;
+  align-items: center;
+  justify-content: space-evenly;
 }
