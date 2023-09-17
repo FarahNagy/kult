@@ -52,112 +52,91 @@ const Contact = () => {
       );
   };
 
+  
+
   return (
     <div className="mainContact">
+      <div className="topLeft" />
+      <div className="topRight" />
+      <div className="bottomLeft" />
+      <div className="bottomRight" />
       <div className="contactform">
         <div className="leftWhiteDiv">
-          <p className="yourDesignVoice"> 
+          <p className="yourDesignVoice">
             <span className="design">YOUR DESIGN,</span>
             <br />
             <span className="voice">YOUR VOICE</span>
           </p>
+          <div className="whiteDivBack">
+            <div className="laptopIllust" />
+          </div>
         </div>
         <div className="rightBlueDiv">
-        <span className="talkAbtVision">LET'S TALK ABOUT YOUR VISION!</span>
+          <span className="talkAbtVision">LET'S TALK ABOUT YOUR VISION!</span>
           <form ref={form} onSubmit={sendEmail} className="theForm">
-             <div className="firstLastName">
+            <div className="firstLastName">
+                <span className="FNLabel">First Name</span>
               <input
-                className="placeholder"
+                className="placeholderFirstLast"
                 type="text"
                 name="firstName"
                 placeholder="First Name"
-                style={{
-                  height: "40px",
-                  width: "230px",
-                  borderRadius: "16px",
-                  border: "none",
-                }}
                 value={textareaValue5}
                 onChange={(e) => setTextareaValue5(e.target.value)}
               />
+              <span className="LNLabel">Last Name</span>
               <input
-                className="placeholder"
+                className="placeholderFirstLast"
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
-                style={{
-                  height: "40px",
-                  width: "230px",
-                  borderRadius: "16px",
-                  border: "none",
-                }}
                 value={textareaValue4}
                 onChange={(e) => setTextareaValue4(e.target.value)}
               />
-            </div> 
+            </div>
             <div>
+            <span className="emailLabel">Email</span>
               <input
-                className="placeholder"
+                className="email"
                 type="email"
                 name="email"
                 placeholder="Email"
-                style={{
-                  width: "500px",
-                  height: "45px",
-                  borderRadius: "16px",
-                  border: "none",
-                }}
+                
                 value={textareaValue3}
                 onChange={(e) => setTextareaValue3(e.target.value)}
               />
             </div>
-            <div >
+            <div>
+            <span className="emailLabel">Phone</span>
+
               <input
-                className="placeholder"
+                className="phone"
                 type="text"
                 name="phone"
                 placeholder="Phone"
-                style={{
-                  width: "500px",
-                  height: "40px",
-                  borderRadius: "16px",
-                  border: "none",
-                }}
+                
                 value={textareaValue2}
                 onChange={(e) => setTextareaValue2(e.target.value)}
               />
             </div>
+            <div style={{display:'flex', flexDirection:'column'}}>
+            <span className="messageLabel">Message</span>
             <textarea
-              className="placeholder"
+              className="message"
               name="message"
               placeholder="Message..."
-              style={{
-                paddingTop:'10px',
-                width: "500px",
-                height: "240px",
-                borderRadius: "16px",
-                border: "none",
-                resize: "none",
-              }}
+              
               value={textareaValue}
               onChange={(e) => setTextareaValue(e.target.value)}
             />
-            {/* <input
+            <input
               type="submit"
               value="SEND"
               className="send"
-              style={{
-                width: "100px",
-                height: "35px",
-                
-                fontFamily: "boldFont",
-                border: "none",
-                outline: "none",
-                borderRadius: "20px",
-                fontSize: "19px",
-              }}
-            />  */}
-                 
+             
+            />
+            </div>
+                
           </form>
         </div>
       </div>
