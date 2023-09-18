@@ -4,7 +4,7 @@ import "./home.css";
 import CardBox from "./CardBox";
 import CardBox2 from "./CardBox2";
 import Carousel from "react-elastic-carousel";
-
+import Footer from "./Footer";
 const breakPoint = [
   {
     width: 1,
@@ -197,6 +197,7 @@ const Home = () => {
 
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

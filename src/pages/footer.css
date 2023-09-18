@@ -1,0 +1,122 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circles {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.circleItem {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-color: #3498db; /* Set the background color */
+  border-radius: 50%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.joinTheKult {
+  color: black;
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: "boldFont";
+  color: #3a3939;
+}
+
+.contactInfoBox {
+  display: flex;
+  padding-top: 30px;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneIcon {
+  display: flex;
+}
+
+.thePhoneNo {
+  margin-top: 7px;
+  padding-left: 15px;
+  font-size: 15px;
+  color: #3a3939;
+  font-family: "regFont";
+}
+
+.theEmailAddress {
+  margin-top: 7px;
+  padding-left: 15px;
+  font-size: 15px;
+  color: #3a3939;
+  font-family: "regFont";
+}
+.theDestination {
+  margin-top: 7px;
+  padding-left: 15px;
+  font-size: 15px;
+  color: #3a3939;
+  font-family: "regFont";
+  
+}
+
+.emailIcon {
+  display: flex;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.address {
+  display: flex;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #3a3939;
+  font-family: "regFont";
+  text-decoration: none;
+}
+
+.rightInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook {
+  display: flex;
+  text-decoration: none;
+}
+.instagram {
+  display: flex;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.theFBPage {
+  margin-top: 7px;
+  padding-left: 15px;
+  font-size: 15px;
+  color: #3a3939;
+  font-family: "regFont";
+ 
+}
+
+.theIGPage {
+  margin-top: 7px;
+  padding-left: 15px;
+  font-size: 15px;
+  color: #3a3939;
+  font-family: "regFont";
+  
+}
+
+.copy-right {
+    font-family: "regFont";
+    color: #3a3939;
+    padding-top: 10px;
+font-size:12px;
+}
