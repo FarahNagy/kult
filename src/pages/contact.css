@@ -8,6 +8,16 @@
   height: 1000px;
   z-index: 1;
   display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 770px) {
+    height: 860px;
+  }
+  @media screen and (max-width: 570px) {
+    height: 780px;
+  }
+  @media screen and (max-width: 485px) {
+    height:750px;
+  }
 }
 
 .topLeft {
@@ -336,7 +346,7 @@
   @media screen and (max-width: 570px) {
     height: 100px;
     font-size: 11px;
-    margin-top:6px;
+    margin-top: 6px;
     width: 210px;
   }
   @media screen and (max-width: 470px) {
@@ -643,7 +653,7 @@
 }
 
 .FNLabel {
-  display:none;
+  display: none;
   @media screen and (max-width: 570px) {
     display: block;
     font-size: 9.5px;
@@ -737,7 +747,6 @@
   }
 } */
 
-
 .messageLabel {
   display: none;
   @media screen and (max-width: 570px) {
@@ -758,4 +767,9 @@
     margin-left: 11px;
     color: white;
   }
+}
+
+.footerContact {
+  z-index: 1;
+  margin-top: 60px;
 }

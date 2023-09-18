@@ -1,6 +1,7 @@
 import React from "react";
 import "./platforms.css";
 import { Link } from "react-router-dom";
+import Footer from "./FooterWithoutClients";
 
 const Platforms = () => {
   return (
@@ -75,6 +76,9 @@ const Platforms = () => {
           <div className="flag" />
           <div className="car" />
         </div>
+      </div>
+      <div className="footerPlatforms">
+      <Footer/>
       </div>
     </div>
   );

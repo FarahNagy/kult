@@ -1,6 +1,6 @@
 import React from "react";
 import "./services.css";
-import FooterWithoutClients from "./FooterWithoutClients";
+import Footer from "./FooterWithoutClients";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
@@ -310,6 +310,9 @@ const Services = () => {
           </p>
         </div>
         <div className="carPlaceHolder"></div>
+      </div>
+      <div className="footerServices">
+      <Footer/>
       </div>
     </div>
   );

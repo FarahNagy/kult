@@ -10,8 +10,33 @@
 .mainServices {
   display: flex;
   width: 100%;
-  height: 4500px;
+  height: 3000px;
   flex-direction: column;
+  @media screen and (max-width: 736px) {
+    height:3200px;
+  }
+  @media screen and (max-width: 670px) {
+    height:3000px;
+  }
+  @media screen and (max-width: 600px) {
+    height:4400px;
+  }
+  @media screen and (max-width: 518px) {
+    height:4500px;
+  }
+  @media screen and (max-width: 463px) {
+    height:4550px;
+  }
+  @media screen and (max-width: 450px) {
+    height:4260px;
+  }
+  @media screen and (max-width: 430px) {
+    height:4200px;
+  }
+  @media screen and (max-width: 398px) {
+    height:4330px;
+  }
+  
 }
 
 .bubblesServices {
@@ -707,8 +732,17 @@
   height: 370px;
   background-color: #edf6fd;
   display: flex;
+  @media screen and (max-width: 658px) {
+    height:340px;
+  }
   @media screen and (max-width: 600px) {
-    height: 470px;
+    height: 400px;
+  }
+  @media screen and (max-width: 510px) {
+    height:440px;
+  }
+  @media screen and (max-width: 450px) {
+    height:400px;
   }
 }
 
@@ -804,6 +838,7 @@
   @media screen and (max-width: 862px) {
     width: 100px;
   }
+  
 }
 
 .carousel-slider {
@@ -830,4 +865,9 @@
 
 .control-next {
   background-color: transparent !important;
+}
+
+
+.footerServices{
+  margin-top: 30px;
 }

@@ -88,7 +88,9 @@ const About = () => {
         </div>
         <div className="fourthRowLeft"></div>
       </div>
+      <div className="footerAbtUs">
       <Footer/>
+      </div>
     </div>
   );
 };

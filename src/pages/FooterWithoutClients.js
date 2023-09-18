@@ -19,7 +19,7 @@ const FooterWithoutClients = () => {
         <div className="leftInfo">
           <section className="phoneIcon">
             <img src="phone.png" alt="kult-logo" className="icon" />
-            <div className="thePhoneNo">+2 2542 8244</div>
+            <a href="tel:+2 2542 8244" className="thePhoneNo">+2 2542 8244</a>
           </section>
           <a href="mailto:info@kulteg.com" className="emailIcon">
             <img src="email.png" alt="kult-logo" className="icon" />
