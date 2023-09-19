@@ -74,101 +74,100 @@ const Home = () => {
           >
             {isExpanded ? "View Less" : "View More"}
           </button>
-          
         </div>
         <div className="cardScroller">
-        <Carousel breakPoints={breakPoint} >
-        <div className="oneCard">
-        <p className="cardHeading">
-          CREATIVE
-          <br />
-          ENTERTAINMENT
-          <br />
-          PLATFORMS.
-        </p>
+          <Carousel breakPoints={breakPoint}>
+            <div className="oneCard">
+              <p className="cardHeading">
+                CREATIVE
+                <br />
+                ENTERTAINMENT
+                <br />
+                PLATFORMS.
+              </p>
 
-        <p className="cardContentFirst ">
-          This is what started it all. At Kult, we believe that no idea is too
-          big or too bizarre, no matter how outrageous it might sound.
-        </p>
-      </div>
-      <div className="oneCard">
-        <p className="cardHeading">
-          ON GROUND
-          <br />
-          ACTIVATIONS.
-          <br />
-        </p>
-
-        <p className="cardContent">
-          On-Ground Activations are one of the main keys to delivering your
-          message to the masses and to make your campaign a dynamic platform
-          that directly reaches your clientele.
-        </p>
-      </div>
-      <div className="oneCard">
-        <p className="cardHeading">
-          PRODUCT &
-          <br />
-          BTL MARKETING.
-          <br />
-        </p>
-
-        <p className="cardContent">
-          To guarantee the best results in all services offered, Kult also
-          proves the production of anything you desire. From ushering services,
-          recruitment, production or selling units.
-        </p>
-      </div>
-      <div className="oneCard">
-        <p className="cardHeading">
-          SOCIAL MEDIA &
-          <br />
-          PUBLIC RELATIONS.
-          <br />
-        </p>
-
-        <p className="cardContentOne">
-          Kult has built a strong, reliable, and creative digital marketing team
-          that manages aspects of a successful digital campaign which includes
-          business development, content creation, media buying, and graphic
-          design.
-        </p>
-      </div>
-      <div className="oneCard">
-        <p className="cardHeading">
-          EVENT PLANNING
-          <br />
-          & MANAGEMENT.
-          <br />
-        </p>
-
-        <p className="cardContentOne">
-          At Kult, we have developed the ultimate formula to create a successful
-          event. Event planning & event management are falsely considered the
-          same thing, but to have a successful event you need to combine a team
-          that can do both simultaneously and coherently.
-        </p>
-      </div>
-      <div className="oneCard">
-        <p className="cardHeading">
-          TRADE-MARKETING &
-          <br />
-          DISTRIBUTION.
-          <br />
-        </p>
-
-        <p className="cardContentOne">
-          All businesses realize the importance of marketing to consumers,
-          however many businesses fail to develop proper strategies when it
-          comes to marketing products to the wholesalers, distributors, and
-          retailers that bring them to the consumers
-        </p>
-      </div>
-          </Carousel>
+              <p className="cardContentFirst ">
+                This is what started it all. At Kult, we believe that no idea is
+                too big or too bizarre, no matter how outrageous it might sound.
+              </p>
             </div>
-        <div className="rowThree">
+            <div className="oneCard">
+              <p className="cardHeading">
+                ON GROUND
+                <br />
+                ACTIVATIONS.
+                <br />
+              </p>
 
+              <p className="cardContent">
+                On-Ground Activations are one of the main keys to delivering
+                your message to the masses and to make your campaign a dynamic
+                platform that directly reaches your clientele.
+              </p>
+            </div>
+            <div className="oneCard">
+              <p className="cardHeading">
+                PRODUCT &
+                <br />
+                BTL MARKETING.
+                <br />
+              </p>
+
+              <p className="cardContent">
+                To guarantee the best results in all services offered, Kult also
+                proves the production of anything you desire. From ushering
+                services, recruitment, production or selling units.
+              </p>
+            </div>
+            <div className="oneCard">
+              <p className="cardHeading">
+                SOCIAL MEDIA &
+                <br />
+                PUBLIC RELATIONS.
+                <br />
+              </p>
+
+              <p className="cardContentOne">
+                Kult has built a strong, reliable, and creative digital
+                marketing team that manages aspects of a successful digital
+                campaign which includes business development, content creation,
+                media buying, and graphic design.
+              </p>
+            </div>
+            <div className="oneCard">
+              <p className="cardHeading">
+                EVENT PLANNING
+                <br />
+                & MANAGEMENT.
+                <br />
+              </p>
+
+              <p className="cardContentOne">
+                At Kult, we have developed the ultimate formula to create a
+                successful event. Event planning & event management are falsely
+                considered the same thing, but to have a successful event you
+                need to combine a team that can do both simultaneously and
+                coherently.
+              </p>
+            </div>
+            <div className="oneCard">
+              <p className="cardHeading">
+                TRADE-MARKETING &
+                <br />
+                DISTRIBUTION.
+                <br />
+              </p>
+
+              <p className="cardContentOne">
+                All businesses realize the importance of marketing to consumers,
+                however many businesses fail to develop proper strategies when
+                it comes to marketing products to the wholesalers, distributors,
+                and retailers that bring them to the consumers
+              </p>
+            </div>
+          </Carousel>
+        </div>
+        <div className="rowThree">
           <div className="beigeBalloon">
             <img src="Arrow2.png" className="secondArrow" />
             <div className="textInBeigeBubble">
@@ -193,11 +192,12 @@ const Home = () => {
               </p>
             </div>
           </div>
-                    <div className="manAndPlantDiv"></div>
-
+          <div className="manAndPlantDiv"></div>
+        </div>
+        <div className="footerHome">
+          <Footer />
         </div>
       </div>
-      <Footer/>
     </div>
   );
 };

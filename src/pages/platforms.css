@@ -322,7 +322,7 @@
 }
 
 .BoBPar {
-  font-family: "medFont";
+  font-family: "regFont";
   font-size: 18px;
   line-height: 1;
   color: #29658c;
@@ -666,7 +666,7 @@
   padding-right: 50px;
   line-height: 1;
 
-  font-family: "medFont";
+  font-family: "regFont";
   font-size: 18px;
   color: #29658c;
   @media screen and (max-width: 1294px) {
@@ -933,7 +933,7 @@
 
 .BoWText {
   line-height: 1;
-  font-family: "medFont";
+  font-family: "regFont";
   font-size: 18px;
   padding-left: 28px;
   width: 46%;

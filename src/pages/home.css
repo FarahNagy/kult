@@ -152,7 +152,7 @@
 }
 
 .yourBrand {
-  font-family: "regFont";
+  font-family: "lightFont";
   padding-left: 4px;
   font-size: 65px;
   color: #3a3939;
@@ -403,7 +403,6 @@ width:260px;
 
 .rowTwo {
   width: 100%;
-  height: 2000px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -880,3 +879,24 @@ width:260px;
   width: 240px !important;
 }
 
+.footerHome{
+  margin-top: -80px;
+  @media screen and (max-width: 1240px) {
+    margin-top: -100px;
+  }
+  @media screen and (max-width: 1154px) {
+    margin-top: -180px;
+  }
+  @media screen and (max-width: 1068px) {
+    margin-top:-210px;
+  }
+  @media screen and (max-width: 896px) {
+   margin-top:-280px;
+  }
+  @media screen and (max-width: 700px) {
+    margin-top: -400px;
+  }
+  @media screen and (max-width: 510px) {
+    margin-top: -150px;
+  }
+}

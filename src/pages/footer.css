@@ -13,7 +13,7 @@
 .circleItem {
   width: 30px; /* Adjust the width as needed */
   height: 30px; /* Adjust the height as needed */
-  background-color: #4aa9ea;; /* Set the background color */
+  background-color: #4aa9ea; /* Set the background color */
   border-radius: 50%;
   margin-left: 2px;
   margin-right: 2px;
@@ -31,12 +31,12 @@
   }
   @media screen and (max-width: 430px) {
     width: 17px;
-    height: 17px;;
-   }
+    height: 17px;
+  }
 }
 
 .joinTheKult {
-  color: black;
+  color: #3a3939;
   padding-top: 10px;
   font-size: 20px;
   font-family: "boldFont";
@@ -48,12 +48,12 @@
     font-size: 16px;
   }
   @media screen and (max-width: 485px) {
-    font-size:14px;
-   }
-   @media screen and (max-width: 430px) {
-    font-size:12px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 430px) {
+    font-size: 12px;
     padding-top: 5px;
-   }
+  }
 }
 
 .contactInfoBox {
@@ -68,13 +68,12 @@
     width: 460px;
   }
   @media screen and (max-width: 485px) {
-   width:390px;
-   }
-   @media screen and (max-width: 430px) {
-    padding-top:20px;
-    width:333px;
-   }
-  
+    width: 390px;
+  }
+  @media screen and (max-width: 430px) {
+    padding-top: 20px;
+    width: 333px;
+  }
 }
 
 .leftInfo {
@@ -87,7 +86,7 @@
 }
 
 .thePhoneNo {
-  margin-top: 7px;
+  margin-top: 2px;
   padding-left: 15px;
   font-size: 15px;
   color: #3a3939;
@@ -100,18 +99,17 @@
     font-size: 12px;
   }
   @media screen and (max-width: 485px) {
-    font-size:10.5px;
+    font-size: 10.5px;
     padding-left: 7px;
-   }
-   @media screen and (max-width: 430px) {
-    font-size:9px;
-    margin-top:3px;
-
-   }
+  }
+  @media screen and (max-width: 430px) {
+    font-size: 9px;
+    margin-top: 3px;
+  }
 }
 
 .theEmailAddress {
-  margin-top: 7px;
+  margin-top: 2px;
   padding-left: 15px;
   font-size: 15px;
   color: #3a3939;
@@ -123,17 +121,16 @@
     font-size: 12px;
   }
   @media screen and (max-width: 485px) {
-    font-size:10.5px;
+    font-size: 10.5px;
     padding-left: 7px;
-   }
-   @media screen and (max-width: 430px) {
+  }
+  @media screen and (max-width: 430px) {
     font-size: 9px;
-    margin-top:3px;
-
-   }
+    margin-top: 3px;
+  }
 }
 .theDestination {
-  margin-top: 7px;
+  margin-top: 2px;
   padding-left: 15px;
   font-size: 15px;
   color: #3a3939;
@@ -145,13 +142,13 @@
     font-size: 12px;
   }
   @media screen and (max-width: 485px) {
-    font-size:10.5px;
+    font-size: 10.5px;
     padding-left: 7px;
-   }
-   @media screen and (max-width: 430px) {
+  }
+  @media screen and (max-width: 430px) {
     font-size: 9px;
-    margin-top:3px;
-   }
+    margin-top: 3px;
+  }
 }
 
 .emailIcon {
@@ -186,7 +183,7 @@
 }
 
 .theFBPage {
-  margin-top: 7px;
+  margin-top: 2px;
   padding-left: 15px;
   font-size: 15px;
   color: #3a3939;
@@ -198,18 +195,17 @@
     font-size: 12px;
   }
   @media screen and (max-width: 485px) {
-    font-size:10.5px;
-    padding-left:7px;
-   }
-   @media screen and (max-width: 430px) {
+    font-size: 10.5px;
+    padding-left: 7px;
+  }
+  @media screen and (max-width: 430px) {
     font-size: 9px;
-    margin-top:3px;
-
-   }
+    margin-top: 3px;
+  }
 }
 
 .theIGPage {
-  margin-top: 7px;
+  margin-top: 2px;
   padding-left: 15px;
   font-size: 15px;
   color: #3a3939;
@@ -221,13 +217,13 @@
     font-size: 12px;
   }
   @media screen and (max-width: 485px) {
-    font-size:10.5px;
-    padding-left:7px;
-   }
-   @media screen and (max-width: 430px) {
+    font-size: 10.5px;
+    padding-left: 7px;
+  }
+  @media screen and (max-width: 430px) {
     font-size: 9px;
-    margin-top:3px;
-   }
+    margin-top: 3px;
+  }
 }
 
 .copy-right {
@@ -243,7 +239,7 @@
   }
   @media screen and (max-width: 430px) {
     font-size: 9px;
-   }
+  }
 }
 
 .icon {
@@ -252,9 +248,456 @@
   @media screen and (max-width: 485px) {
     width: 20px;
     height: 20px;
-   }
-   @media screen and (max-width: 430px) {
-    width:18px;
-    height: 18px;;
-   }
+  }
+  @media screen and (max-width: 430px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.companies1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 830px) {
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width: 650px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 485px) {
+    width: 400px;
+    padding-bottom: 5px;
+  }
+  @media screen and (max-width: 430px) {
+    width: 350px;
+    padding-bottom: 0;
+  }
+}
+
+.egbank {
+  background-image: url("egbank.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.dhl {
+  background-image: url("DHL.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.etisalat {
+  background-image: url("etisalat.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.kinder {
+  background-image: url("kinder.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.nutella {
+  background-image: url("nutella.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.reebok {
+  background-image: url("Reebok.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.glo {
+  background-image: url("glo.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.companies2 {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  @media screen and (max-width: 830px) {
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width: 650px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 485px) {
+    width: 400px;
+    padding-bottom: 5px;
+  }
+  @media screen and (max-width: 430px) {
+    width: 350px;
+    padding-bottom: 0;
+  }
+}
+
+.pm-inc {
+  background-image: url("pmi-inc.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.bat {
+  background-image: url("bat.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.abou-ghaly {
+  background-image: url("aboughaly.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.elsewedy {
+  background-image: url("elsewedy.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.fiat {
+  background-image: url("fiat.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.ferrero {
+  background-image: url("ferrero.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.ktm {
+  background-image: url("ktm.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.companies3 {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  @media screen and (max-width: 830px) {
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width: 650px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 485px) {
+    width: 400px;
+    padding-bottom: 5px;
+  }
+  @media screen and (max-width: 430px) {
+    width: 350px;
+    padding-bottom: 0;
+  }
+}
+
+.cbc {
+  background-image: url("cbc.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.zas {
+  background-image: url("zas.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.mansour {
+  background-image: url("mansour.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.pepsi {
+  background-image: url("pepsi.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.sixt {
+  background-image: url("sixt.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.winston {
+  background-image: url("wilson.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.legacy {
+  background-image: url("legacy.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.companies4 {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  @media screen and (max-width: 650px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 485px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 430px) {
+    width: 350px;
+    padding-bottom: 10px;
+  }
+}
+
+.relx {
+  background-image: url("relx.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.infinity {
+  background-image: url("infinity.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.extra {
+  background-image: url("extra.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.ismod {
+  background-image: url("ismod.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.sky {
+  background-image: url("sky.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.theAddressClient {
+  background-image: url("theAddress.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.goldmills {
+  background-image: url("goldmills.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 830px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.footer-header {
+  color: #4aa9ea;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: "boldFont";
+  /* color: #3a3939; */
+  @media screen and (max-width: 830px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 485px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 430px) {
+    font-size: 12px;
+    padding-top: 5px;
+  }
 }
