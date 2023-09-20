@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
   display: flex;
   height: 90px;
-  justify-content: center;
+  justify-content: space-evenly;
   position: fixed; /* Fixed position to keep it in place */
   top:0; /* Position it at the top of the viewport */
   left: 0; /* Position it at the left edge */
@@ -19,6 +19,12 @@ export const Nav = styled.nav`
   @media screen and (max-width:960px){
     transition: 0.8s all ease;
   }
+  @media screen and (max-width:768px){
+    flex-direction:row-reverse;
+    justify-content: right;
+
+
+  }
 `;
 
  
@@ -29,6 +35,7 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;
+  
   &.active {
     color: #4aa9ea;
   }
@@ -48,12 +55,12 @@ export const Bars = styled(FaBars)`
   color: #fff;
   @media screen and (max-width: 768px) {
     display: block;
-    position: absolute;
-    margin-bottom:20px;
-    right: 0;
-    width:35px;
+    // position: absolute;
+    margin-top:35px;
+    // right: 10px;
+    width:80px;
     height: 35px;
-    transform: translate(-100%, 60%);
+    // transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -62,8 +69,9 @@ export const Bars = styled(FaBars)`
 
 export const NavMenu = styled.div`
   display: flex;
+  width:55%;
   align-items: center;
-  margin-right: -24px;
+  justify-content: space-between;
 
   
   @media screen and (max-width: 768px) {

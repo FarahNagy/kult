@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Nav, NavLink, NavMenu, Bars } from "./NavbarElements";
 import SearchBar from "./SearchBar";
 import "./index.css";
+import "./search.css";
+
 const Navbar = ({ toggle }) => {
+  
   return (
     <>
       <Nav>
-        <NavLink to="/">
+        <NavLink to="/" className="logoLink">
           <img src="Group 16.png" alt="kult-logo" className="logo" />
         </NavLink>
         <Bars onClick={toggle} />
+        <div className="searchOnMobile">
+        <SearchBar />
+        </div>
         <NavMenu className="menu">
           <NavLink to="/" activeStyle className="menuItem">
             HOME
@@ -27,7 +33,9 @@ const Navbar = ({ toggle }) => {
             CONTACT
           </NavLink>
         </NavMenu>
+        <div className="OGSearch">
         <SearchBar />
+        </div>
       </Nav>
     </>
   );

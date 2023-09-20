@@ -1,0 +1,13 @@
+@font-face {
+    font-family: boldFont;
+    src: url("Montserrat-Bold.ttf");
+  }
+  @font-face {
+    font-family: regFont;
+    src: url("Montserrat-Regular.ttf");
+  }
+
+
+.sideBarMenuItem{
+    font-family:"boldFont";
+}

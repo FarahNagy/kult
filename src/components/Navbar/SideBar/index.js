@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 import {
   SidebarContainer,
   Icon,
@@ -16,19 +17,19 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink onClick={toggle} to="/">
+          <SidebarLink onClick={toggle} to="/" className="sideBarMenuItem">
             HOME
           </SidebarLink>
-          <SidebarLink onClick={toggle} to="/about-us">
+          <SidebarLink onClick={toggle} to="/about-us" className="sideBarMenuItem">
             ABOUT US
           </SidebarLink>
-          <SidebarLink onClick={toggle} to="/services">
+          <SidebarLink onClick={toggle} to="/services" className="sideBarMenuItem">
             SERVICES
           </SidebarLink>
-          <SidebarLink onClick={toggle} to="/platforms">
+          <SidebarLink onClick={toggle} to="/platforms" className="sideBarMenuItem">
             PLATFORMS
           </SidebarLink>
-          <SidebarLink onClick={toggle} to="/contact">
+          <SidebarLink onClick={toggle} to="/contact" className="sideBarMenuItem">
             CONTACT
           </SidebarLink>
         </SidebarMenu>

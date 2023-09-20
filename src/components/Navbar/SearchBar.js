@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "./search.css";
+
 var data = require("./data.json");
 const SearchBar = () => {
+
+
   const [value, setValue] = useState("");
 
   const handleChange = (event) => {

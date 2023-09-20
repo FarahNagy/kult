@@ -1,35 +1,49 @@
 @font-face {
   font-family: myFont;
-  src: url('IstokWeb-Bold.ttf');
+  src: url("IstokWeb-Bold.ttf");
 }
-.logo{
-    padding-top: 30px;
-    width: 160px;
-    height: 100px;
-    @media screen and (min-width: 769px) {
-      margin-left: 80px;
-    }
-  
-   
+.logo {
+  padding-top: 20px;
+  width: 130px;
+  height: 90px;
+  position: absolute;
+  margin-left: -15px;
+  @media screen and (max-width: 768px) {
+   margin-left: 10px;
+  }
 }
 
-.menu{
+.logoLink {
+  width: 100px;
+}
+
+/* .menu{
     margin-left: 70px;
     margin-top: 15px;
-}
+} */
 
-.menuItem{
-  padding: 10px;
-  margin-right: 50px;
+.menuItem {
   margin-top: 15px;
   height: 40%;
   text-align: center;
   border-radius: 25px;
-  font-family:myFont;
+  font-family: "boldFont";
   white-space: nowrap;
-  
+  @media screen and (max-width: 1110px) {
+    font-size: 14px;
+    height: 35%;
+  }
+  @media screen and (max-width: 960px) {
+    font-size: 12px;
+    height: 32%;
+  }
+  @media screen and (max-width: 830px) {
+    font-size:11px;
+    height: 30%;
+ 
+   }
   &.active {
     color: #4aa9ea;
-    background-color:#fff;
+    background-color: #fff;
   }
 }
