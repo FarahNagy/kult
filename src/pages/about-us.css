@@ -47,9 +47,12 @@
   }
   @media screen and (max-width: 850px) {
     font-size: 40px;
+    margin-top:140px;
+    margin-left:15px;
   }
   @media screen and (max-width: 750px) {
     font-size: 35px;
+    margin-top: 120px;
   }
   @media screen and (max-width: 650px) {
     font-size: 30px;
@@ -60,6 +63,7 @@
   }
   @media screen and (max-width: 450px) {
     font-size: 25px;
+    margin-left: 15px;
     padding-bottom: 10px;
     margin-top: 100px;
   }
@@ -97,6 +101,7 @@
   }
   @media screen and (max-width: 850px) {
     font-size: 13.5px;
+    margin-left: 15px;
     width: 255px;
   }
   @media screen and (max-width: 750px) {
@@ -112,7 +117,8 @@
     width: 215px;
   }
   @media screen and (max-width: 450px) {
-    font-size: 13px;
+    font-size: 11px;
+    margin-left: 15px;
     width: 170px;
     margin-top: -30px;
   }
@@ -120,8 +126,6 @@
 
 .theScrollerRow {
   width: 100%;
-  background-color: white;
-  height: 330px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,11 +135,14 @@
   @media screen and (max-width: 1026px) {
     margin-top: -100px;
   }
-  @media screen and (max-width: 926px) {
+  @media screen and (max-width: 950px) {
     margin-top: -120px;
   }
   @media screen and (max-width: 850px) {
-    margin-top: -140px;
+    margin-top: -150px;
+  }
+  @media screen and (max-width: 750px) {
+    margin-top: -160px;
   }
   @media screen and (max-width: 650px) {
     margin-top: -180px;
@@ -144,16 +151,16 @@
     margin-top: -230px;
   }
   @media screen and (max-width: 450px) {
-    margin-top: -190px;
+    margin-top: -210px;
   }
 }
 
 .valuesHeading {
   font-family: "boldFont";
   color: #4aa9ea;
-  font-size: 32px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  font-size: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   @media screen and (max-width: 850px) {
     font-size: 26px;
   }
@@ -174,8 +181,8 @@
 }
 
 .excellence {
-  width: 400px;
-  height: 248px;
+  width: 290px;
+  height: 170px;
   background-image: url("valueExcellence.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -190,8 +197,8 @@
 }
 
 .integrity {
-  width: 400px;
-  height: 248px;
+   width: 290px;
+  height: 170px;
   background-image: url("valueIntegrity.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -206,8 +213,8 @@
 }
 
 .collab {
-  width: 400px;
-  height: 248px;
+   width: 290px;
+  height: 170px;
   background-image: url("valueCollab.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -222,8 +229,8 @@
 }
 
 .accountability {
-  width: 400px;
-  height: 248px;
+   width: 290px;
+  height: 170px;
   background-image: url("valueAccountability.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -237,8 +244,8 @@
   }
 }
 .diversity {
-  width: 400px;
-  height: 248px;
+   width: 290px;
+  height: 170px;
   background-image: url("valueDiversity.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -252,8 +259,8 @@
   }
 }
 .equality {
-  width: 400px;
-  height: 248px;
+   width: 290px;
+  height: 170px;
   background-image: url("valueEquality.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -267,8 +274,8 @@
   }
 }
 .inclusion {
-  width: 400px;
-  height: 248px;
+   width: 290px;
+  height: 170px;
   background-image: url("valueInclusion.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -284,6 +291,7 @@
 
 .divCarousel {
   z-index: 1;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,6 +310,7 @@
 
 .thirdRow {
   width: 100%;
+  background-color: white;
   height: 850px;
   display: flex;
   @media screen and (max-width: 1226px) {
@@ -324,15 +333,15 @@
   }
   @media screen and (max-width: 750px) {
     height: 430px;
-    margin-top: -100px;
+    /* margin-top: -100px; */
   }
   @media screen and (max-width: 650px) {
-    margin-top: -140px;
+    /* margin-top: -140px; */
     height: 1050px;
     flex-direction: column;
   }
   @media screen and (max-width: 450px) {
-    margin-top: -140px;
+    /* margin-top: -140px; */
     height: 1350px;
     flex-direction: column;
   }

@@ -14,7 +14,7 @@
   @media screen and (max-width: 960px) {
     height: 2100px;
   }
-  @media screen and (max-width:825px) {
+  @media screen and (max-width: 825px) {
     height: 2000px;
   }
   @media screen and (max-width: 684px) {
@@ -34,14 +34,14 @@
   height: 600px;
   background-size: cover;
   box-shadow: 0px -10px 20px #4aa9ea;
-  background-image: url("lastTrialBlur.png");
+  background-image: url("firstBoBBack.png");
   background-repeat: repeat-y;
   display: flex;
-  @media screen and (max-width: 1092px) {
-    background-image: url("evenSmallerBoB.png");
+  @media screen and (max-width: 1126px) {
+    background-image: url("2ndBoBBack.png");
   }
-  @media screen and (max-width: 472px) {
-    background-image: url("smallestBoB.png");
+  @media screen and (max-width: 500px) {
+    background-image: url("3rdBoBBack.png");
   }
 
   @media screen and (max-width: 684px) {
@@ -443,15 +443,14 @@
   height: 600px;
   background-size: cover;
   box-shadow: 0px -10px 20px #4aa9ea;
-  background-image: url("battleofburger.png");
+  background-image: url("firstBurgerBack.png");
   background-repeat: repeat-y;
   display: flex;
-  @media screen and (max-width: 1180px) {
-    background-image: url("smallerBurgerBackG.png");
+  @media screen and (max-width: 1126px) {
+    background-image: url("2ndBurgerBack.png");
   }
   @media screen and (max-width: 1090px) {
     height: 500px;
-    background-position-y: 15%;
   }
   @media screen and (max-width: 940px) {
     height: 450px;
@@ -464,6 +463,10 @@
   }
   @media screen and (max-width: 550px) {
     height: 380px;
+  }
+  @media screen and (max-width: 500px) {
+    background-image: url("3rdBurgerBack.png");
+    background-position-y: -25px;
   }
 
   /* @media screen and (max-width: 430px) {
@@ -826,11 +829,14 @@
   height: 670px;
   background-size: cover;
   box-shadow: 0px -10px 20px #4aa9ea;
-  background-image: url("BoW.png");
+  background-image: url("firstWheelsBack.png");
   background-repeat: repeat-y;
   display: flex;
   @media screen and (max-width: 1150px) {
     height: 600px;
+  }
+  @media screen and (max-width: 1126px) {
+    background-image: url("2ndWheelsBack.png");
   }
   @media screen and (max-width: 1070px) {
     height: 570px;
@@ -847,12 +853,16 @@
   @media screen and (max-width: 650px) {
     height: 450px;
   }
+  @media screen and (max-width: 640px) {
+    background-image: url("3rdWheelsBack.png");
+  }
   @media screen and (max-width: 600px) {
     height: 430px;
   }
   @media screen and (max-width: 570px) {
     height: 400px;
   }
+  
   @media screen and (max-width: 478px) {
     height: 370px;
   }
@@ -1269,6 +1279,6 @@
 .footerPlatforms {
   margin-top: 50px;
   @media screen and (max-width: 485px) {
-    margin-top:30px;
+    margin-top: 30px;
   }
 }

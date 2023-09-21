@@ -33,7 +33,7 @@ function CardBox() {
       </div>
       <div className="oneCard">
         <p className="cardHeading">
-          PRODUCT &
+          PRODUCTION &
           <br />
           BTL MARKETING.
           <br />

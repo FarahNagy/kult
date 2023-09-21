@@ -10,7 +10,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavLink to="/" className="logoLink">
-          <img src="Group 16.png" alt="kult-logo" className="logo" />
+          <img src="KultWebsiteLogo.png" alt="kult-logo" className="logo" />
         </NavLink>
         <Bars onClick={toggle} />
         <div className="searchOnMobile">

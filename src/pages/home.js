@@ -5,6 +5,7 @@ import CardBox from "./CardBox";
 import CardBox2 from "./CardBox2";
 import Carousel from "react-elastic-carousel";
 import Footer from "./Footer";
+
 const breakPoint = [
   {
     width: 1,
@@ -23,7 +24,8 @@ const breakPoint = [
     itemsToShow: 4,
   },
 ];
-
+// const child = { width: `300em`, height: `100%`};
+// const parent  = { width: `60em`, height: `100%`};
 const Home = () => {
   const [isExpanded, setExpanded] = useState(false);
   const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
@@ -75,9 +77,9 @@ const Home = () => {
             {isExpanded ? "View Less" : "View More"}
           </button>
         </div>
-        <div className="cardScroller">
-          <Carousel breakPoints={breakPoint}>
-            <div className="oneCard">
+        <div className="cardScroller" >
+         <Carousel>
+            <div className="oneCard" >
               <p className="cardHeading">
                 CREATIVE
                 <br />
@@ -91,7 +93,7 @@ const Home = () => {
                 too big or too bizarre, no matter how outrageous it might sound.
               </p>
             </div>
-            <div className="oneCard">
+            <div className="oneCard" >
               <p className="cardHeading">
                 ON GROUND
                 <br />
@@ -105,7 +107,7 @@ const Home = () => {
                 platform that directly reaches your clientele.
               </p>
             </div>
-            <div className="oneCard">
+            <div className="oneCard" >
               <p className="cardHeading">
                 PRODUCT &
                 <br />
@@ -119,7 +121,7 @@ const Home = () => {
                 services, recruitment, production or selling units.
               </p>
             </div>
-            <div className="oneCard">
+            <div className="oneCard" >
               <p className="cardHeading">
                 SOCIAL MEDIA &
                 <br />
@@ -134,7 +136,7 @@ const Home = () => {
                 media buying, and graphic design.
               </p>
             </div>
-            <div className="oneCard">
+            <div className="oneCard" >
               <p className="cardHeading">
                 EVENT PLANNING
                 <br />

@@ -49,28 +49,24 @@ const Services = () => {
               showThumbs={false}
             >
               <img
-                src="carouselImage4.png"
+                src="firstCarPic3.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
-                src="carouselImage3.png"
+                src="firstCarPic2.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
-                src="carouselImage2.png"
+                src="firstCarPic1.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
-              <img
-                src="carouselImage5.png"
-                alt="kult-logo"
-                className="carousel"
-              />
+            
             </Carousel>
           </div>
         </div>
@@ -106,35 +102,35 @@ const Services = () => {
               <img
                 src="carouselImage4.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
                 src="carouselImage3.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
                 src="carouselImage2.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
                 src="carouselImage5.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
             </Carousel>
           </div>
         </div>
       </div>
-      <div className="rowDrei">
-        <div className="CEPDiv">
-          <div className="CEPText">
-            <p className="CEPHeading">SOCIAL MEDIA & PUBLIC RELATIONS</p>
-            <p className="CEPPar">
+       <div className="rowDrei">
+        <div className="SMPDiv">
+          <div className="SMPText">
+            <p className="SMPHeading">SOCIAL MEDIA & PUBLIC RELATIONS</p>
+            <p className="SMPPar">
               Kult has built a strong, reliable, and creative digital marketing
               team that manages aspects of a successful digital campaign which
               includes business development, content creation, media buying, and
@@ -146,7 +142,7 @@ const Services = () => {
               expand your brand.
             </p>
           </div>
-          <div className="carOne">
+          <div className="carThree">
             <div className="theBlueArrow"></div>
             <Carousel
               autoPlay={false}
@@ -159,37 +155,33 @@ const Services = () => {
               width={320}
               showThumbs={false}
             >
-              <img
-                src="carouselImage4.png"
+             
+             <img
+                src="thirdCarPic.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
-                src="carouselImage3.png"
+                src="thirdCarouselImage.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
-                src="carouselImage2.png"
+                src="thirdCarouselPic.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
-              <img
-                src="carouselImage5.png"
-                alt="kult-logo"
-                className="carousel"
-              />
             </Carousel>
           </div>
         </div>
       </div>
-      <div className="rowVier">
+       <div className="rowVier">
         <div className="PBMDiv">
           <div className="PBMText">
-            <p className="PBMHeading">PRODUCTION BTL & MARKETING</p>
+            <p className="PBMHeading">PRODUCTION & BTL MARKETING</p>
             <p className="PBMPar">
               To guarantee the best results in all services offered, Kult also
               proves the production of anything you desire. From ushering
@@ -211,36 +203,32 @@ const Services = () => {
               showThumbs={false}
             >
               <img
-                src="carouselImage4.png"
+                src="fourthCarPic1.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
-                src="carouselImage3.png"
+                src="fourthCarPic2.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
-                src="carouselImage2.png"
+                src="fourthCarPic3.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
-              <img
-                src="carouselImage5.png"
-                alt="kult-logo"
-                className="carousel"
-              />
+             
             </Carousel>
           </div>
         </div>
       </div>
-      <div className="rowDrei">
-        <div className="CEPDiv">
-          <div className="CEPText">
-            <p className="CEPHeading">EVENT PLANNING & MANAGEMENT</p>
+       <div className="rowFunf">
+        <div className="EPMDiv">
+          <div className="EPMText">
+            <p className="EPMHeading">EVENT PLANNING & MANAGEMENT</p>
             <p className="EPMPar">
               At Kult, we have developed the ultimate formula to create a
               successful event. Event planning & event management are falsely
@@ -252,7 +240,7 @@ const Services = () => {
               hassle free expereince for both clients and attendees.
             </p>
           </div>
-          <div className="carOne">
+          <div className="carFive">
             <div className="theBlueArrow"></div>
             <Carousel
               autoPlay={false}
@@ -266,32 +254,28 @@ const Services = () => {
               showThumbs={false}
             >
               <img
-                src="carouselImage4.png"
+                src="lastCarPic1.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
-                src="carouselImage3.png"
+                src="lastCarPic2.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
               <img
-                src="carouselImage2.png"
+                src="lastCarPic3.png"
                 alt="kult-logo"
-                className="carousel"
+                className="carousel3"
               />
 
-              <img
-                src="carouselImage5.png"
-                alt="kult-logo"
-                className="carousel"
-              />
+             
             </Carousel>
           </div>
         </div>
-      </div>
+      </div> 
       <div className="rowSechs">
         <div className="TMDText">
           <p className="TMDHeading">TRADE-MARKETING & DISTRIBUTION</p>
@@ -313,7 +297,7 @@ const Services = () => {
       </div>
       <div className="footerServices">
       <Footer/>
-      </div>
+      </div>   
     </div>
   );
 };
