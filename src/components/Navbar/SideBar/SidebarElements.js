@@ -26,6 +26,7 @@ top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 export const CloseIcon = styled(FaTimes)`
 color: #fff;
 margin-top:20px;
+
 `
 export const Icon = styled.div`
 position: absolute;
@@ -46,7 +47,6 @@ export const SidebarMenu =  styled.ul`
  grid-template-columns: 1fr;
  grid-template-rows: repeat(6, 70px);
  text-align: center;
- 
 
  @media screen and (max-width: 480px){
     grid-template-rows: repeat(6, 60px);
@@ -66,7 +66,6 @@ export const SidebarLink = styled(Link)`
     transition: 0.2s ease-in-out;
     color: #fff;
     cursor: pointer;
-
 
     &:hover {
         color: #29658c;

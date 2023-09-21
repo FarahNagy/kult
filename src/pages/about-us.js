@@ -1,7 +1,7 @@
 import React from "react";
 import "./about-us.css";
 import Carousel from "react-elastic-carousel";
-import Footer from "./FooterWithoutClients"
+import Footer from "./FooterWithoutClients";
 const breakPoint = [
   {
     width: 1,
@@ -71,7 +71,6 @@ const About = () => {
         <div className="thirdRowRightDiv"></div>
       </div>
       <div className="fourthRow">
-       
         <div className="fourthRowRight">
           <div className="visionText">
             <p className="vision">VISION</p>
@@ -89,7 +88,7 @@ const About = () => {
         <div className="fourthRowLeft"></div>
       </div>
       <div className="footerAbtUs">
-      <Footer/>
+        <Footer />
       </div>
     </div>
   );

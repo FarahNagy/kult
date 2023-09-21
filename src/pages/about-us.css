@@ -186,6 +186,7 @@
   background-image: url("valueExcellence.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center center;
   @media screen and (max-width: 750px) {
     width: 300px;
     height: 148px;
@@ -202,6 +203,7 @@
   background-image: url("valueIntegrity.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center center;
   @media screen and (max-width: 750px) {
     width: 300px;
     height: 148px;
@@ -218,6 +220,7 @@
   background-image: url("valueCollab.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center center;
   @media screen and (max-width: 750px) {
     width: 300px;
     height: 148px;
@@ -234,6 +237,7 @@
   background-image: url("valueAccountability.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center center;
   @media screen and (max-width: 750px) {
     width: 300px;
     height: 148px;
@@ -249,6 +253,7 @@
   background-image: url("valueDiversity.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center center;
   @media screen and (max-width: 750px) {
     width: 300px;
     height: 148px;
@@ -264,6 +269,7 @@
   background-image: url("valueEquality.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center center;
   @media screen and (max-width: 750px) {
     width: 300px;
     height: 148px;
@@ -279,6 +285,7 @@
   background-image: url("valueInclusion.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center center;
   @media screen and (max-width: 750px) {
     width: 300px;
     height: 148px;

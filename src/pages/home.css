@@ -489,7 +489,6 @@ width:260px;
 .oneCard {
   width: 309px;
   height: 256px;
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -596,23 +595,25 @@ width:260px;
   width: 980px;
   height: 15px;
   @media screen and (max-width: 1240px) {
-    width: 1028.7px;
+    width: 940px;
   }
   @media screen and (max-width: 1154px) {
-    width: 957.4px;
+    width: 890px;
   }
   @media screen and (max-width: 982px) {
-    width: 814.8px;
+    width: 770px;
   }
   @media screen and (max-width: 896px) {
-    width: 743.5px;
+    width: 710px;
   }
   @media screen and (max-width: 810px) {
-    width: 672.2px;
+    width: 630px;
   }
   @media screen and (max-width: 739px) {
     display: none;
   }
+
+  
 }
 
 .cardScroller {
@@ -630,6 +631,7 @@ width:260px;
   outline: none;
   color: #29658c;
   text-decoration: underline;
+  font-family: "medFont";
   cursor: pointer;
 }
 
@@ -646,6 +648,9 @@ width:260px;
     width: 180px;
     height: 185.1px;
   }
+  @media screen and (max-width: 810px) {
+    margin-top: -85px;
+  }
 
   @media screen and (max-width: 700px) {
     width: 125.5px;
@@ -660,7 +665,7 @@ width:260px;
   display: flex;
   flex-direction: row-reverse;
   @media screen and (max-width: 739px) {
-    padding-top: 20px;
+    padding-top: 80px;
   }
   @media screen and (max-width: 510px) {
     flex-direction: column;
@@ -877,8 +882,7 @@ width:260px;
   display: none !important;
 }
 
-.rec-item-wrapper {
-}
+
 
 .footerHome{
   margin-top: -80px;

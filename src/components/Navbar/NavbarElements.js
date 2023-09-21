@@ -35,7 +35,7 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;
-  
+
   &.active {
     color: #4aa9ea;
   }
@@ -53,6 +53,7 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
+
   @media screen and (max-width: 768px) {
     display: block;
     // position: absolute;
