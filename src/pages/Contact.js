@@ -64,7 +64,7 @@ const Contact = () => {
         progress: undefined,
         theme: "light",
       });
-      // return;
+      return;
     }
     else{
       if(isValid===false){
@@ -78,6 +78,8 @@ const Contact = () => {
           progress: undefined,
           theme: "light",
         });
+        return;
+
       }
       else{
         if(isValidEmail===false){
