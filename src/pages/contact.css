@@ -273,6 +273,10 @@
   }
 }
 
+/* .phone[type="number"] {
+  -moz-appearance: textfield;
+} */
+
 .phone {
   color: black;
   font-size: 15px;
@@ -283,6 +287,11 @@
   height: 40px;
   border-radius: 16px;
   border: none;
+  /* -webkit-appearance: none;
+  -moz-appearance:textfield;
+    appearance:none; */
+
+
   @media screen and (max-width: 1120px) {
     width: 422px;
   }
@@ -870,7 +879,7 @@
   position: relative;
 }
 
-.phone::-webkit-inner-spin-button,
+/* .phone::-webkit-inner-spin-button,
 .phone::-webkit-outer-spin-button {
   -webkit-appearance: none;
   appearance: none;
@@ -882,4 +891,14 @@
   background-color: transparent;
   cursor: pointer;
   pointer-events: none;
+} */
+
+/* .phone::-webkit-outer-spin-button,
+.phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+
+.phone[type=number] {
+  -moz-appearance: textfield;
+} */

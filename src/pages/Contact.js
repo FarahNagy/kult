@@ -8,17 +8,49 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const form = useRef();
   const [textareaValue, setTextareaValue] = useState("");
-  const [textareaValue2, setTextareaValue2] = useState("");
-  const [textareaValue3, setTextareaValue3] = useState("");
+  // const [textareaValue2, setTextareaValue2] = useState("");
+  // const [textareaValue3, setTextareaValue3] = useState("");
   const [textareaValue4, setTextareaValue4] = useState("");
   const [textareaValue5, setTextareaValue5] = useState("");
+
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [isValid, setIsValid] = useState(true);
+
+  const [email, setEmail] = useState("");
+  const [isValidEmail, setIsValidEmail] = useState(true);
+
+  const validateEmail = (email) => {
+    const emailPattern = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+    return emailPattern.test(email);
+  };
+
+  const handleChangeEmail = (e) => {
+    const inputValue = e.target.value;
+    setEmail(inputValue);
+    setIsValidEmail(validateEmail(inputValue));
+  };
+
+  const handleChangePhone = (e) => {
+    const inputValue = e.target.value;
+    setPhoneNumber(inputValue);
+    setIsValid(validatePhoneNumber(inputValue));
+  };
+
+  const validatePhoneNumber = (phone) => {
+    // Define a regex pattern for a valid phone number
+    const phonePattern = /^(?=.*\d)[\d\s()+-]+$/; // For a 10-digit phone number
+
+    // Test if the input matches the pattern
+    return phonePattern.test(phone);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     if (
       textareaValue.trim() === "" ||
-      textareaValue2.trim() === "" ||
-      textareaValue3.trim() === "" ||
+      phoneNumber.trim() === ""||
+      email.trim() === "" ||
       textareaValue4.trim() === "" ||
       textareaValue5.trim() === ""
     ) {
@@ -32,7 +64,37 @@ const Contact = () => {
         progress: undefined,
         theme: "light",
       });
-      return;
+      // return;
+    }
+    else{
+      if(isValid===false){
+        toast.error("Invalid phone number.", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      }
+      else{
+        if(isValidEmail===false){
+          toast.error("Invalid email.", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+          return;
+        }
+      }
+      
     }
 
     // Perform other form submission logic here
@@ -48,8 +110,8 @@ const Contact = () => {
     });
 
     setTextareaValue("");
-    setTextareaValue2("");
-    setTextareaValue3("");
+    setPhoneNumber("");
+    setEmail("");
     setTextareaValue4("");
     setTextareaValue5("");
 
@@ -115,10 +177,12 @@ const Contact = () => {
                 <span className="emailLabel">Email</span>
                 <input
                   className="email"
-                  type="email"
+                  type="text"
                   name="email"
-                  value={textareaValue3}
-                  onChange={(e) => setTextareaValue3(e.target.value)}
+                  value={email}
+                  onChange={handleChangeEmail}
+                  // value={textareaValue3}
+                  // onChange={(e) => setTextareaValue3(e.target.value)}
                 />
               </div>
               <div>
@@ -126,16 +190,14 @@ const Contact = () => {
 
                 <input
                   className="phone"
-                  type="number"
                   name="phone"
-                  value={textareaValue2}
-                  onChange={(e) => setTextareaValue2(e.target.value)}
-                  style={{
-                    WebkitAppearance: "none", // For webkit browsers (Safari, Chrome)
-                    MozAppearance: "textfield", // For Firefox
-                    appearance: "none", // For other browsers
-                  }}
+                  // value={textareaValue2}
+                  // onChange={(e) => setTextareaValue2(e.target.value)}
+                  type="text"
+                  value={phoneNumber}
+                  onChange={handleChangePhone}
                 />
+                {/* {!isValid && <p style={{ color: "red" }}>Invalid phone number</p>} */}
               </div>
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <span className="messageLabel">Message</span>
