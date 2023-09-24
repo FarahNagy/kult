@@ -121,10 +121,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_on007tm",
-        "template_bu7b7wn",
+        "service_on007tm", //Service ID
+        "template_bu7b7wn", //Template ID
         form.current,
-        "i1DdlPhcWSt426QAt"
+        "i1DdlPhcWSt426QAt" //Public Key
       )
       .then(
         (result) => {

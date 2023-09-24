@@ -10,7 +10,6 @@ import Contact from "./pages/Contact";
 import Sidebar from "./components/Navbar/SideBar";
 
 
-
 function ScrollToTop() {
   const { pathname } = useLocation();
 
