@@ -31,6 +31,7 @@ const Platforms = () => {
           <img className="crowdBoB" src="./crowdBoB.png" alt="crowdd"></img>
         </div>
       </div>
+      <div className="divisionOne"/>
       <div className="battleOfTheBurgers">
         <div className="burgerNTongue">
           <div className="tongue" />
@@ -54,7 +55,10 @@ const Platforms = () => {
           </Link>
         </div>
       </div>
+      <div className="division"/>
+
       <div className="battleOfTheWheels">
+
         <div className="BoWLogoNText">
           <div className="BoWLogo"/>
           <div className="BoWText">

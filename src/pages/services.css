@@ -957,18 +957,24 @@
 }
 
 .theBlueArrow {
-  background-image: url("arrowServices.png");
+  /* background-image: url("arrowServices.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
   width: 94px;
-  height: 47px;
+
+height: 47px;
   @media screen and (max-width: 977px) {
     width: 80px;
     height: 40px;
   }
+ 
   @media screen and (max-width: 600px) {
     width: 94px;
     height: 47px;
+    position: relative;
+    margin-left: 0;
+    margin-top: 0;;
+    display: none;
   }
 }
 

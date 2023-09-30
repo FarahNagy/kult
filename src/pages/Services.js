@@ -20,6 +20,7 @@ const Services = () => {
         </p>
       </div>
       <div className="rowEins">
+      {/* <div className="theBlueArrow"></div> */}
         <div className="CEPDiv">
           <div className="CEPText">
             <p className="CEPHeading">CREATIVE ENTERTAINMENT PLATFORMS</p>
@@ -73,6 +74,8 @@ const Services = () => {
       </div>
       
       <div className="rowZwei">
+      {/* <div className="theBlueArrow"></div> */}
+
         <div className="OGADiv">
           <div className="OGAText">
             <p className="OGAHeading">ON-GROUND ACTIVATIONS</p>
@@ -127,6 +130,8 @@ const Services = () => {
         </div>
       </div>
        <div className="rowDrei">
+       {/* <div className="theBlueArrow"></div> */}
+
         <div className="SMPDiv">
           <div className="SMPText">
             <p className="SMPHeading">SOCIAL MEDIA & PUBLIC RELATIONS</p>
@@ -179,6 +184,8 @@ const Services = () => {
         </div>
       </div>
        <div className="rowVier">
+       {/* <div className="theBlueArrow"></div> */}
+
         <div className="PBMDiv">
           <div className="PBMText">
             <p className="PBMHeading">PRODUCTION & BTL MARKETING</p>
@@ -226,6 +233,8 @@ const Services = () => {
         </div>
       </div>
        <div className="rowFunf">
+        
+       {/* <div className="theBlueArrow"></div> */}
         <div className="EPMDiv">
           <div className="EPMText">
             <p className="EPMHeading">EVENT PLANNING & MANAGEMENT</p>
@@ -239,6 +248,7 @@ const Services = () => {
               floor stickers - every single detail is managed by us to ensure a
               hassle free expereince for both clients and attendees.
             </p>
+
           </div>
           <div className="carFive">
             <div className="theBlueArrow"></div>
@@ -275,6 +285,7 @@ const Services = () => {
             </Carousel>
           </div>
         </div>
+
       </div> 
       <div className="rowSechs">
         <div className="TMDText">

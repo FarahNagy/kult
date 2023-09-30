@@ -5,6 +5,12 @@ import Footer from "./FooterWithoutClients";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const sgEmail = require('@sendgrid/mail')
+
+sgEmail.setApiKey(
+  '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'
+);
+
 const Contact = () => {
   const form = useRef();
   const [textareaValue, setTextareaValue] = useState("");
@@ -44,97 +50,177 @@ const Contact = () => {
     return phonePattern.test(phone);
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    if (
-      textareaValue.trim() === "" ||
-      phoneNumber.trim() === ""||
-      email.trim() === "" ||
-      textareaValue4.trim() === "" ||
-      textareaValue5.trim() === ""
-    ) {
-      toast.error("Please fill in all required fields.", {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
-      return;
-    }
-    else{
-      if(isValid===false){
-        toast.error("Invalid phone number.", {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
-        return;
+  //   if (
+  //     textareaValue.trim() === "" ||
+  //     phoneNumber.trim() === "" ||
+  //     email.trim() === "" ||
+  //     textareaValue4.trim() === "" ||
+  //     textareaValue5.trim() === ""
+  //   ) {
+  //     toast.error("Please fill in all required fields.", {
+  //       position: "top-center",
+  //       autoClose: 5000,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: true,
+  //       draggable: true,
+  //       progress: undefined,
+  //       theme: "light",
+  //     });
+  //     return;
+  //   } else {
+  //     if (isValid === false) {
+  //       toast.error("Invalid phone number.", {
+  //         position: "top-center",
+  //         autoClose: 5000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //         progress: undefined,
+  //         theme: "light",
+  //       });
+  //       return;
+  //     } else {
+  //       if (isValidEmail === false) {
+  //         toast.error("Invalid email.", {
+  //           position: "top-center",
+  //           autoClose: 5000,
+  //           hideProgressBar: false,
+  //           closeOnClick: true,
+  //           pauseOnHover: true,
+  //           draggable: true,
+  //           progress: undefined,
+  //           theme: "light",
+  //         });
+  //         return;
+  //       }
+  //     }
+  //   }
 
-      }
-      else{
-        if(isValidEmail===false){
-          toast.error("Invalid email.", {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-          });
-          return;
-        }
-      }
-      
-    }
+  //   // Perform other form submission logic here
+  //   toast.info("Form submitted successfully.", {
+  //     position: "top-center",
+  //     autoClose: 5000,
+  //     hideProgressBar: false,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //     theme: "light",
+  //   });
 
-    // Perform other form submission logic here
-    toast.info("Form submitted successfully.", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-    });
+  //   setTextareaValue("");
+  //   setPhoneNumber("");
+  //   setEmail("");
+  //   setTextareaValue4("");
+  //   setTextareaValue5("");
 
-    setTextareaValue("");
-    setPhoneNumber("");
-    setEmail("");
-    setTextareaValue4("");
-    setTextareaValue5("");
+  //   e.preventDefault();
 
-    e.preventDefault();
+  //   emailjs
+  //     .sendForm(
+  //       "service_on007tm", //Service ID
+  //       "template_bu7b7wn", //Template ID
+  //       form.current,
+  //       "i1DdlPhcWSt426QAt" //Public Key
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
 
-    emailjs
-      .sendForm(
-        "service_on007tm", //Service ID
-        "template_bu7b7wn", //Template ID
-        form.current,
-        "i1DdlPhcWSt426QAt" //Public Key
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  // const onComplete = (fields) => {
+  //   const message = {
+  //     to: "farahnagy529@gmail.com",
+  //     from: fields.email,
+  //     subject: "New message from a client!",
+  //     html: `
+  //     <p><strong>Name:</strong> ${fields.firstName} ${fields.lastName}</p>
+  //     <p>${fields.message}</p>`,
+  //   };
+
+  //   e.preventDefault();
+
+  //     if (
+  //       textareaValue.trim() === "" ||
+  //       phoneNumber.trim() === "" ||
+  //       email.trim() === "" ||
+  //       textareaValue4.trim() === "" ||
+  //       textareaValue5.trim() === ""
+  //     ) {
+  //       toast.error("Please fill in all required fields.", {
+  //         position: "top-center",
+  //         autoClose: 5000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //         progress: undefined,
+  //         theme: "light",
+  //       });
+  //       return;
+  //     } else {
+  //       if (isValid === false) {
+  //         toast.error("Invalid phone number.", {
+  //           position: "top-center",
+  //           autoClose: 5000,
+  //           hideProgressBar: false,
+  //           closeOnClick: true,
+  //           pauseOnHover: true,
+  //           draggable: true,
+  //           progress: undefined,
+  //           theme: "light",
+  //         });
+  //         return;
+  //       } else {
+  //         if (isValidEmail === false) {
+  //           toast.error("Invalid email.", {
+  //             position: "top-center",
+  //             autoClose: 5000,
+  //             hideProgressBar: false,
+  //             closeOnClick: true,
+  //             pauseOnHover: true,
+  //             draggable: true,
+  //             progress: undefined,
+  //             theme: "light",
+  //           });
+  //           return;
+  //         }
+  //       }
+  //     }
+
+  //   sgEmail
+  //     .send(message)
+  //     .then(() => {
+  //       form.resetFields();
+  //       toast.info("Form submitted successfully.", {
+  //         position: "top-center",
+  //         autoClose: 5000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //         progress: undefined,
+  //         theme: "light",
+  //       });
+  //       // notification.open({
+  //       //   message: "Message successfu!",
+  //       //   description: "We have successfully received your email.",
+  //       // });
+  //     })
+  //     // .catch((error) => {
+  //     //   console.error("Error: ", error);
+  //     // });
+  // };
 
   return (
     <>
@@ -156,7 +242,7 @@ const Contact = () => {
           </div>
           <div className="rightBlueDiv">
             <span className="talkAbtVision">LET'S TALK ABOUT YOUR VISION!</span>
-            <form ref={form} onSubmit={sendEmail} className="theForm">
+            <form ref={form} onSubmit={onComplete} className="theForm">
               <div className="firstLastName">
                 <span className="FNLabel">First Name</span>
                 <input
