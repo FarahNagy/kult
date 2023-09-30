@@ -5,11 +5,13 @@ import Footer from "./FooterWithoutClients";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const sgEmail = require('@sendgrid/mail')
 
-sgEmail.setApiKey(
-  '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'
-);
+
+const sgMail = require('@sendgrid/mail');
+
+const API_KEY = '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';
+
+sgMail.setApiKey(API_KEY);
 
 const Contact = () => {
   const form = useRef();
@@ -242,7 +244,7 @@ const Contact = () => {
           </div>
           <div className="rightBlueDiv">
             <span className="talkAbtVision">LET'S TALK ABOUT YOUR VISION!</span>
-            <form ref={form} onSubmit={onComplete} className="theForm">
+            <form ref={form} /*onSubmit={onComplete}*/ className="theForm">
               <div className="firstLastName">
                 <span className="FNLabel">First Name</span>
                 <input
