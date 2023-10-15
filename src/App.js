@@ -10,13 +10,7 @@ import Contact from "./pages/Contact";
 import Sidebar from "./components/Navbar/SideBar";
 
 
-class App extends React.Component{
-  constructor(props){
-    super(props);
-    this.state={apiResponse:""};
-    
-  }
-}
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 

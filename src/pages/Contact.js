@@ -1,30 +1,29 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import Footer from "./FooterWithoutClients";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
+// const sgMail = require('@sendgrid/mail');
 
+// const API_KEY = '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';
 
-const sgMail = require('@sendgrid/mail');
-
-const API_KEY = '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';
-
-sgMail.setApiKey(API_KEY);
+// sgMail.setApiKey(API_KEY);
 
 const Contact = () => {
   const form = useRef();
-  const [textareaValue, setTextareaValue] = useState("");
-  // const [textareaValue2, setTextareaValue2] = useState("");
-  // const [textareaValue3, setTextareaValue3] = useState("");
-  const [textareaValue4, setTextareaValue4] = useState("");
-  const [textareaValue5, setTextareaValue5] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("");
 
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+
   const [isValid, setIsValid] = useState(true);
 
-  const [email, setEmail] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true);
 
   const validateEmail = (email) => {
@@ -53,55 +52,6 @@ const Contact = () => {
   };
 
   // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   if (
-  //     textareaValue.trim() === "" ||
-  //     phoneNumber.trim() === "" ||
-  //     email.trim() === "" ||
-  //     textareaValue4.trim() === "" ||
-  //     textareaValue5.trim() === ""
-  //   ) {
-  //     toast.error("Please fill in all required fields.", {
-  //       position: "top-center",
-  //       autoClose: 5000,
-  //       hideProgressBar: false,
-  //       closeOnClick: true,
-  //       pauseOnHover: true,
-  //       draggable: true,
-  //       progress: undefined,
-  //       theme: "light",
-  //     });
-  //     return;
-  //   } else {
-  //     if (isValid === false) {
-  //       toast.error("Invalid phone number.", {
-  //         position: "top-center",
-  //         autoClose: 5000,
-  //         hideProgressBar: false,
-  //         closeOnClick: true,
-  //         pauseOnHover: true,
-  //         draggable: true,
-  //         progress: undefined,
-  //         theme: "light",
-  //       });
-  //       return;
-  //     } else {
-  //       if (isValidEmail === false) {
-  //         toast.error("Invalid email.", {
-  //           position: "top-center",
-  //           autoClose: 5000,
-  //           hideProgressBar: false,
-  //           closeOnClick: true,
-  //           pauseOnHover: true,
-  //           draggable: true,
-  //           progress: undefined,
-  //           theme: "light",
-  //         });
-  //         return;
-  //       }
-  //     }
-  //   }
 
   //   // Perform other form submission logic here
   //   toast.info("Form submitted successfully.", {
@@ -114,12 +64,6 @@ const Contact = () => {
   //     progress: undefined,
   //     theme: "light",
   //   });
-
-  //   setTextareaValue("");
-  //   setPhoneNumber("");
-  //   setEmail("");
-  //   setTextareaValue4("");
-  //   setTextareaValue5("");
 
   //   e.preventDefault();
 
@@ -140,15 +84,94 @@ const Contact = () => {
   //     );
   // };
 
-  // const onComplete = (fields) => {
-  //   const message = {
-  //     to: "farahnagy529@gmail.com",
-  //     from: fields.email,
-  //     subject: "New message from a client!",
-  //     html: `
-  //     <p><strong>Name:</strong> ${fields.firstName} ${fields.lastName}</p>
-  //     <p>${fields.message}</p>`,
-  //   };
+  const onComplete = (e) => {
+    e.preventDefault();
+
+    if (
+      phoneNumber.trim() === "" ||
+      email.trim() === "" ||
+      lastName.trim() === "" ||
+      firstName.trim() === "" ||
+      message.trim() === ""
+    ) {
+      toast.error("Please fill in all required fields.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      return;
+    } else {
+      if (isValid === false) {
+        toast.error("Invalid phone number.", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        return;
+      } else {
+        if (isValidEmail === false) {
+          toast.error("Invalid email.", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+          return;
+        }
+      }
+    }
+    const emailData = {
+      email: email,
+      firstName: firstName,
+      lastName: lastName,
+      phone: phoneNumber,
+      message: message,
+    };
+
+    fetch("http://localhost:4000/send-email", {
+      method: "POST", // Set the request method to POST
+      headers: {
+        "Content-Type": "application/json", // Specify the content type as JSON
+      },
+      body: JSON.stringify(emailData), // Convert the data to a JSON string
+    })
+      .then((response) => {
+        if (response.ok) {
+          toast.info("Form submitted successfully.", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+          setEmail("");
+          setPhoneNumber("");
+          setFirstName("");
+          setLastName("");
+          setMessage("");
+        } else {
+          console.log("Email could not be sent");
+        }
+      })
+      .catch((err) => console.log(err));
+  };
 
   //   e.preventDefault();
 
@@ -204,16 +227,7 @@ const Contact = () => {
   //     .send(message)
   //     .then(() => {
   //       form.resetFields();
-  //       toast.info("Form submitted successfully.", {
-  //         position: "top-center",
-  //         autoClose: 5000,
-  //         hideProgressBar: false,
-  //         closeOnClick: true,
-  //         pauseOnHover: true,
-  //         draggable: true,
-  //         progress: undefined,
-  //         theme: "light",
-  //       });
+
   //       // notification.open({
   //       //   message: "Message successfu!",
   //       //   description: "We have successfully received your email.",
@@ -244,23 +258,24 @@ const Contact = () => {
           </div>
           <div className="rightBlueDiv">
             <span className="talkAbtVision">LET'S TALK ABOUT YOUR VISION!</span>
-            <form ref={form} /*onSubmit={onComplete}*/ className="theForm">
+
+            <form ref={form} onSubmit={onComplete} className="theForm">
               <div className="firstLastName">
                 <span className="FNLabel">First Name</span>
                 <input
                   className="placeholderFirstLast"
                   type="text"
                   name="firstName"
-                  value={textareaValue5}
-                  onChange={(e) => setTextareaValue5(e.target.value)}
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
                 />
                 <span className="LNLabel">Last Name</span>
                 <input
                   className="placeholderFirstLast"
                   type="text"
                   name="lastName"
-                  value={textareaValue4}
-                  onChange={(e) => setTextareaValue4(e.target.value)}
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
                 />
               </div>
               <div>
@@ -294,8 +309,8 @@ const Contact = () => {
                 <textarea
                   className="message"
                   name="message"
-                  value={textareaValue}
-                  onChange={(e) => setTextareaValue(e.target.value)}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
                 <input type="submit" value="SEND" className="send" />
               </div>
