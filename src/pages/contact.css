@@ -1,0 +1,904 @@
+@font-face {
+  font-family: lightFont;
+  src: url("Montserrat-Light.ttf");
+}
+
+.mainContact {
+  width: 100%;
+  /* height: 1200px; */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  /* @media screen and (max-width: 970px) {
+    height:1000px;
+  }
+  @media screen and (max-width: 770px) {
+    height: 1000px;
+  }
+  @media screen and (max-width: 570px) {
+    height: 850px;
+  }
+  @media screen and (max-width: 485px) {
+    height: 830px;
+  } */
+}
+
+.topLeft {
+  width: 550px;
+  height: 620px;
+  position: absolute;
+  background-image: url("topleft.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 970px) {
+    width: 450px;
+    height: 520px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 350px;
+    height: 420px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 280px;
+    height: 370px;
+  }
+  @media screen and (max-width: 570px) {
+    width: 220px;
+    margin-top: 60px;
+  }
+  @media screen and (max-width: 470px) {
+    width: 180px;
+  }
+}
+
+.topRight {
+  right: 0;
+  width: 380px;
+  height: 620px;
+  position: absolute;
+  background-image: url("topright.png");
+  background-size: cover;
+  background-position-y: -150px;
+
+  background-repeat: no-repeat;
+  @media screen and (max-width: 970px) {
+    width: 280px;
+    height: 520px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 300px;
+    height: 420px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 250px;
+    height: 400px;
+  }
+  @media screen and (max-width: 570px) {
+    width: 200px;
+    margin-top: 50px;
+  }
+  @media screen and (max-width: 470px) {
+    width: 150px;
+  }
+}
+
+.bottomLeft {
+  margin-top: 600px;
+  width: 550px;
+  height: 620px;
+  position: absolute;
+  background-image: url("bottomleft.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 970px) {
+    width: 450px;
+    height: 520px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 350px;
+    height: 420px;
+    margin-top: 450px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 250px;
+    height: 400px;
+    margin-top: 400px;
+  }
+  @media screen and (max-width: 570px) {
+    width: 200px;
+    margin-top: 360px;
+  }
+  @media screen and (max-width: 470px) {
+    width: 150px;
+  }
+}
+
+.bottomRight {
+  right: 0;
+  margin-top: 600px;
+  width: 500px;
+  height: 620px;
+  position: absolute;
+  background-image: url("Bottommright.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 970px) {
+    width: 400px;
+    height: 520px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 300px;
+    height: 420px;
+    margin-top: 450px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 250px;
+    height: 400px;
+    margin-top: 400px;
+  }
+  @media screen and (max-width: 570px) {
+    width: 200px;
+    margin-top: 360px;
+  }
+  @media screen and (max-width: 470px) {
+    width: 150px;
+  }
+}
+
+.placeholderFirstLast::placeholder {
+  color: #bfbfbf;
+  position: absolute;
+  margin-top: 2px;
+  font-family: "regFont";
+}
+.phone::placeholder {
+  color: #bfbfbf;
+  position: absolute;
+  margin-top: 2px;
+  font-family: "regFont";
+}
+
+.email::placeholder {
+  color: #bfbfbf;
+  position: absolute;
+  margin-top: 2px;
+  font-family: "regFont";
+}
+.message::placeholder {
+  color: #bfbfbf;
+  position: absolute;
+  margin-top: 2px;
+  font-family: "regFont";
+}
+
+.email:focus {
+  outline: none;
+}
+.phone:focus {
+  outline: none;
+}
+.placeholderFirstLast:focus {
+  outline: none;
+}
+
+.message:focus {
+  outline: none;
+}
+
+.placeholderFirstLast {
+  color: black;
+  font-size: 15px;
+  padding-left: 20px;
+  height: 40px;
+  width: 230px;
+  border-radius: 16px;
+  border: none;
+  @media screen and (max-width: 1120px) {
+    width: 195px;
+  }
+  @media screen and (max-width: 970px) {
+    width: 168px;
+    height: 35px;
+  }
+  @media screen and (max-width: 870px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 132px;
+    font-size: 13px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 114px;
+    height: 30px;
+    padding-left: 10px;
+    padding-bottom: 4px;
+  }
+  @media screen and (max-width: 570px) {
+    width: 96px;
+    height: 25px;
+    font-size: 11px;
+  }
+  @media screen and (max-width: 470px) {
+    width: 70px;
+    height: 20px;
+    font-size: 9.5px;
+    padding-left: 5px;
+    margin: 0px;
+  }
+}
+
+.email {
+  color: black;
+  font-size: 15px;
+  padding-left: 20px;
+  margin: 5px;
+  width: 500px;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  @media screen and (max-width: 1120px) {
+    width: 422px;
+  }
+  @media screen and (max-width: 970px) {
+    width: 365px;
+    height: 35px;
+  }
+  @media screen and (max-width: 870px) {
+    width: 330px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 295px;
+    font-size: 13px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 240px;
+    height: 30px;
+    padding-left: 10px;
+    padding-bottom: 4px;
+  }
+  @media screen and (max-width: 570px) {
+    height: 25px;
+    font-size: 11px;
+    width: 210px;
+  }
+
+  @media screen and (max-width: 470px) {
+    height: 20px;
+    width: 160px;
+    margin: 7px;
+    font-size: 9.5px;
+    padding-left: 5px;
+  }
+}
+
+/* .phone[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+.phone {
+  color: black;
+  font-size: 15px;
+  padding-left: 20px;
+  margin: 5px;
+  margin-top: 20px;
+  width: 500px;
+  height: 40px;
+  border-radius: 16px;
+  border: none;
+  /* -webkit-appearance: none;
+  -moz-appearance:textfield;
+    appearance:none; */
+
+
+  @media screen and (max-width: 1120px) {
+    width: 422px;
+  }
+  @media screen and (max-width: 970px) {
+    width: 365px;
+    height: 35px;
+  }
+  @media screen and (max-width: 870px) {
+    width: 330px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 295px;
+    font-size: 13px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 240px;
+    height: 30px;
+    padding-left: 10px;
+    padding-bottom: 4px;
+  }
+  @media screen and (max-width: 570px) {
+    height: 25px;
+    font-size: 11px;
+    width: 210px;
+  }
+  @media screen and (max-width: 470px) {
+    height: 20px;
+    font-size: 9.5px;
+    padding-left: 5px;
+    width: 160px;
+    margin: 7px;
+  }
+}
+
+.message {
+  color: black;
+  font-size: 15px;
+  padding-left: 20px;
+  margin: 5px;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 500px;
+  height: 240px;
+  border-radius: 16px;
+  border: none;
+  resize: none;
+  @media screen and (max-width: 1120px) {
+    width: 422px;
+    height: 200px;
+  }
+  @media screen and (max-width: 970px) {
+    width: 365px;
+    height: 160px;
+  }
+  @media screen and (max-width: 870px) {
+    width: 330px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 295px;
+    font-size: 13px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 240px;
+    padding-left: 10px;
+  }
+  @media screen and (max-width: 570px) {
+    height: 100px;
+    font-size: 11px;
+    width: 210px;
+  }
+  @media screen and (max-width: 470px) {
+    width: 150px;
+    font-size: 9.5px;
+    height: 120px;
+    padding-left: 5px;
+    width: 160px;
+    margin-top: 8px;
+  }
+}
+
+.send {
+  color: #4aa9ea;
+  cursor: pointer;
+  background-color: white;
+  width: 100px;
+  height: 35px;
+  margin-left: 400px;
+  font-family: "boldFont";
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 19px;
+  @media screen and (max-width: 1120px) {
+    margin-left: 320px;
+  }
+  @media screen and (max-width: 970px) {
+    font-size: 15px;
+    margin-left: 275px;
+  }
+  @media screen and (max-width: 870px) {
+    margin-left: 235px;
+  }
+  @media screen and (max-width: 770px) {
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    margin-left: 225px;
+  }
+  @media screen and (max-width: 670px) {
+    margin-left: 170px;
+    font-size: 13px;
+    height: 25px;
+    width: 75px;
+  }
+  @media screen and (max-width: 570px) {
+    margin-left: 125px;
+  }
+  @media screen and (max-width: 470px) {
+    margin-left: 104px;
+    margin-top: 8px;
+    font-size: 10px;
+    width: 60px;
+    height: 22px;
+  }
+}
+
+.send:hover {
+  background-color: #29658c;
+  color: white;
+}
+
+.contactform {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 22px;
+  margin-top: 140px;
+  width: 1050px;
+  height: 650px;
+  display: flex;
+  z-index: 1;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  @media screen and (max-width: 1120px) {
+    width: 887px;
+    height: 620px;
+  }
+  @media screen and (max-width: 970px) {
+    width: 768px;
+    height: 560px;
+  }
+  @media screen and (max-width: 870px) {
+    width: 688px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 595px;
+    height: 520px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 502px;
+    height: 500px;
+  }
+  @media screen and (max-width: 570px) {
+    width: 460px;
+    height: 385px;
+  }
+  
+  @media screen and (max-width: 470px) {
+    width: 320px;
+    height:370px;
+  }
+}
+
+.leftWhiteDiv {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  @media screen and (max-width: 870px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 470px) {
+    width: 40%;
+  }
+}
+
+.whiteDivBack {
+  width: 100%;
+  height: 100%;
+  background-image: url("contactIllustBack.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 970px) {
+    margin-top: auto;
+    height: 390px;
+  }
+  @media screen and (max-width: 770px) {
+    height: 350px;
+  }
+  @media screen and (max-width: 670px) {
+    /* background-size: cover;
+    background-position-x: 70%;
+    width:100%;
+    height:360px;
+    margin-top: auto; */
+    margin-top: auto;
+    height: 280px;
+  }
+  @media screen and (max-width: 570px) {
+    height: 220px;
+  }
+  @media screen and (max-width: 470px) {
+    height: 160px;
+    width: 130px;
+  }
+}
+
+.laptopIllust {
+  width: 90%;
+  height: 100%;
+  background-image: url("laptopIllust.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  @media screen and (max-width: 970px) {
+    height: 300px;
+  }
+  @media screen and (max-width: 870px) {
+    margin-top: auto;
+    height: 330px;
+  }
+  @media screen and (max-width: 770px) {
+    height: 300px;
+  }
+  @media screen and (max-width: 670px) {
+    height: 250px;
+  }
+}
+
+.rightBlueDiv {
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  background-color: #4aa9ea;
+}
+
+.yourDesignVoice {
+  margin-left: 40px;
+  font-size: 32px;
+  color: #4aa9ea;
+  margin-top: 50px;
+  line-height: 0.95;
+  @media screen and (max-width: 970px) {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+  @media screen and (max-width: 870px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 770px) {
+    font-size: 23px;
+    margin-left: 30px;
+  }
+  @media screen and (max-width: 670px) {
+    font-size: 21px;
+    margin-left: 25px;
+  }
+  @media screen and (max-width: 570px) {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+  @media screen and (max-width: 470px) {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+
+.design {
+  font-family: "boldFont";
+}
+
+.voice {
+  font-family: "lightFont";
+}
+
+.talkAbtVision {
+  font-size: 28px;
+  font-family: "medFont";
+  color: white;
+  margin-top: 30px;
+  @media screen and (max-width: 1120px) {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 970px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 870px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 770px) {
+    font-size: 17.5px;
+  }
+
+  @media screen and (max-width: 670px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 570px) {
+    font-size: 12.5px;
+  }
+  @media screen and (max-width: 470px) {
+    font-size: 10px;
+  }
+}
+
+.firstLastName {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  margin: 5px;
+  @media screen and (max-width: 1120px) {
+    font-size: 30px;
+    width: 422px;
+  }
+  @media screen and (max-width: 970px) {
+    width: 365px;
+  }
+  @media screen and (max-width: 870px) {
+    width: 330px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 295px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 240px;
+  }
+  @media screen and (max-width: 570px) {
+    width: 210px;
+  }
+  @media screen and (max-width: 470px) {
+    width: 160px;
+    margin: 7px;
+  }
+}
+
+.theForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: auto;
+  height: 520px;
+  align-items: center;
+  justify-content: space-evenly;
+  @media screen and (max-width: 1120px) {
+    height: 500px;
+  }
+  @media screen and (max-width: 970px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 870px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 770px) {
+    height: 420px;
+  }
+  @media screen and (max-width: 570px) {
+    height: 315px;
+  }
+}
+
+.FNLabel {
+  display: block;
+  font-size: 16px;
+  position: absolute;
+  margin-top: -23px;
+  font-family: "medFont";
+  margin-left: 10px;
+  color: white;
+  @media screen and (max-width: 970px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 870px) {
+    font-size: 13px;
+    margin-top: -20px;
+  }
+  @media screen and (max-width: 670px) {
+    font-size: 11px;
+    margin-top: -17px;
+  }
+
+  @media screen and (max-width: 570px) {
+    display: block;
+    font-size: 9px;
+    position: absolute;
+    margin-top: -13px;
+    font-family: "medFont";
+    margin-left: 10px;
+    color: white;
+  }
+
+  @media screen and (max-width: 470px) {
+    font-size: 7.5px;
+    position: absolute;
+    margin-top: -11px;
+    font-family: "medFont";
+    margin-left: 6px;
+    color: white;
+  }
+}
+
+.LNLabel {
+  display: block;
+  font-size: 16px;
+  position: absolute;
+  margin-top: -23px;
+  font-family: "medFont";
+  margin-left: 280px;
+  color: white;
+
+  @media screen and (max-width: 1120px) {
+    margin-left: 240px;
+  }
+
+  @media screen and (max-width: 970px) {
+    font-size: 14px;
+    margin-left: 210px;
+  }
+  @media screen and (max-width: 870px) {
+    font-size: 13px;
+    margin-top: -20px;
+    margin-left: 190px;
+  }
+  @media screen and (max-width: 770px) {
+    margin-left: 175px;
+  }
+  @media screen and (max-width: 670px) {
+    font-size: 11px;
+    margin-top: -17px;
+    margin-left: 138px;
+  }
+
+  @media screen and (max-width: 570px) {
+    display: block;
+    font-size: 9px;
+    position: absolute;
+    margin-top: -13px;
+    font-family: "medFont";
+    margin-left: 124px;
+    color: white;
+  }
+
+  @media screen and (max-width: 470px) {
+    font-size: 7.5px;
+    position: absolute;
+    margin-top: -11px;
+    font-family: "medFont";
+    margin-left: 96px;
+    color: white;
+  }
+}
+
+.emailLabel {
+  display: block;
+  font-size: 16px;
+  position: absolute;
+  margin-top: -2px;
+  font-family: "medFont";
+  margin-left: 15px;
+  color: white;
+  @media screen and (max-width: 970px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 870px) {
+    font-size: 13px;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 670px) {
+    font-size: 11px;
+    margin-top: 2.5px;
+  }
+
+  @media screen and (max-width: 570px) {
+    display: block;
+    font-size: 9px;
+    position: absolute;
+    margin-top: 6px;
+    font-family: "medFont";
+    margin-left: 15px;
+    color: white;
+  }
+
+  @media screen and (max-width: 470px) {
+    font-size: 7.5px;
+    position: absolute;
+    margin-top: -3.5px;
+    font-family: "medFont";
+    margin-left: 13px;
+    color: white;
+  }
+}
+
+/* .phoneLabel {
+  display: none;
+
+  @media screen and (max-width: 570px) {
+    display: contents;
+
+    font-size: 7.5px;
+
+    position: absolute;
+    margin-top: -6px;
+    font-family: "medFont";
+    margin-left: 6px;
+    color: white;
+  }
+} */
+
+/* .messageLabel {
+  display: none;
+
+  @media screen and (max-width: 570px) {
+    display: contents;
+    font-size: 7.5px;
+    margin-top: 0px;
+    margin-left: 6px;
+    font-family: "medFont";
+    color: white;
+  }
+} */
+
+.messageLabel {
+  display: block;
+  font-size: 16px;
+  position: absolute;
+  margin-top: -2px;
+  font-family: "medFont";
+  margin-left: 15px;
+  color: white;
+
+  @media screen and (max-width: 970px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 670px) {
+    font-size: 11px;
+    margin-top: 2px;
+  }
+  @media screen and (max-width: 570px) {
+    display: block;
+    font-size: 9px;
+    position: absolute;
+    margin-top: 5px;
+    font-family: "medFont";
+    margin-left: 14px;
+    color: white;
+  }
+
+  @media screen and (max-width: 470px) {
+    font-size: 7.5px;
+    position: absolute;
+    margin-top: -4px;
+    font-family: "medFont";
+    margin-left: 11px;
+    color: white;
+  }
+}
+
+.footerContact {
+  z-index: 1;
+  margin-top: 60px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+/* .phone::-webkit-inner-spin-button,
+.phone::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  cursor: pointer;
+  pointer-events: none;
+} */
+
+/* .phone::-webkit-outer-spin-button,
+.phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.phone[type=number] {
+  -moz-appearance: textfield;
+} */

@@ -1,0 +1,62 @@
+@font-face {
+  font-family: myFont;
+  src: url("IstokWeb-Bold.ttf");
+}
+.logo {
+  width: 190px;
+  height: 134px;
+  margin-top: 5px;
+  position: absolute;
+  margin-left: -65px;
+  @media screen and (max-width: 955px) {
+   margin-left: -45px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top:-20px;
+    margin-left:-30px;
+   }
+   @media screen and (max-width: 485px) {
+    width: 150px;
+    height:114px;
+    margin-top:-6px;
+   }
+}
+
+.logoLink {
+  width: 150px;
+  /* height: 100%;
+  background-image: url("./KultWebsiteLogo.png");
+  background-size: cover; */
+
+}
+
+/* .menu{
+    margin-left: 70px;
+    margin-top: 15px;
+} */
+
+.menuItem {
+  margin-top: 15px;
+  height: 40%;
+  text-align: center;
+  border-radius: 25px;
+  font-family: "boldFont";
+  white-space: nowrap;
+  @media screen and (max-width: 1110px) {
+    font-size: 14px;
+    height: 35%;
+  }
+  @media screen and (max-width: 960px) {
+    font-size: 12px;
+    height: 32%;
+  }
+  @media screen and (max-width: 830px) {
+    font-size:11px;
+    height: 30%;
+ 
+   }
+  &.active {
+    color: #4aa9ea;
+    background-color: #fff;
+  }
+}

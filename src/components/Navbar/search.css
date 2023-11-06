@@ -1,0 +1,137 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  background-color: rgba(217, 217, 217, 0.5);
+  backdrop-filter: blur(5px);
+  width: 160px;
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+
+  @media screen and (max-width: 960px) {
+    width: 140px;
+  }
+  @media screen and (max-width: 830px) {
+    width: 130px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 150px;
+   
+  }
+}
+
+.dropdown-row {
+  padding: 7px;
+  cursor: pointer;
+  text-align: start;
+  font-size: 15px;
+  text-decoration: none;
+  color: #29658c;
+}
+
+.dropdown:empty {
+  border: none;
+}
+
+.search-container {
+  margin-top: 35px;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width:768px) {
+margin-top:38px;  }
+  
+}
+
+.search-input {
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  display: flex;
+  border: none;
+  height: 35px;
+  @media screen and (max-width:768px) {
+    height: 30px;
+  }
+  
+}
+
+.search-text {
+  background-color: #29658c;
+  text-decoration: white;
+  border: none;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  padding: 10px;
+  width: 130px;
+
+  @media screen and (max-width: 960px) {
+    width: 110px;
+  }
+  @media screen and (max-width: 830px) {
+    width: 100px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+}
+
+.search-text::placeholder {
+  color: white;
+  margin-left: 5px;
+  font-family: "lightFont";
+  border: none;
+  font-size: 14px;
+  @media screen and (max-width: 1110px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 960px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 830px) {
+    font-size: 11px;
+  }
+}
+
+.searchButton {
+  background-color: transparent;
+  width: 30px;
+  height: 35px;
+  padding-right: 20px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border: none;
+  background-color: #29658c;
+  cursor: pointer;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.buttonImage {
+  width: 20px;
+  height: 20px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input.search-text {
+  color: white;
+}
+
+.OGSearch {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.searchOnMobile {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
